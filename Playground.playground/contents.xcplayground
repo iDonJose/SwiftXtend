@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' display-mode='raw' executeOnSourceChanges='false'>
+    <pages>
+        <page name='Summary'/>
+        <page name='Global'/>
+        <page name='Either'/>
+        <page name='Geohash'/>
+        <page name='Hash'/>
+        <page name='Pair'/>
+        <page name='Ticker'/>
+        <page name='Conversions'/>
+        <page name='Randomizable'/>
+        <page name='Array'/>
+        <page name='Bool'/>
+        <page name='Bundle'/>
+        <page name='Calendar'/>
+        <page name='Date'/>
+        <page name='DispatchQueue'/>
+        <page name='IndexPath'/>
+        <page name='Numbers'/>
+        <page name='Range'/>
+        <page name='String'/>
+        <page name='TimeZone'/>
+        <page name='Interpolable'/>
+        <page name='Similar'/>
+    </pages>
+</playground>
