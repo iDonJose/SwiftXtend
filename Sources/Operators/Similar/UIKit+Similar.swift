@@ -12,4 +12,8 @@ extension UIEdgeInsets: Similar {
 	public static func ~~ (lhs: UIEdgeInsets, rhs: UIEdgeInsets) -> Bool { return lhs == rhs }
 }
 
+extension UIColor: Similar {
+	public static func ~~ (lhs: UIColor, rhs: UIColor) -> Bool { return lhs == rhs }
+}
+
 #endif

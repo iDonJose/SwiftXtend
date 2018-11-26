@@ -28,4 +28,9 @@ extension CGRect: Similar {
 	public static func ~~ (lhs: CGRect, rhs: CGRect) -> Bool { return lhs == rhs }
 }
 
+
+extension CGColor: Similar {
+	public static func ~~ (lhs: CGColor, rhs: CGColor) -> Bool { return lhs == rhs }
+}
+
 #endif

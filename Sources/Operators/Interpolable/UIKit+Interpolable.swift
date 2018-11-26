@@ -29,4 +29,46 @@ extension UIEdgeInsets: Interpolable {
 
 }
 
+
+// MARK: UIColor
+
+extension UIColor { /// Can't conform to Interpolable as UIColor is not final
+
+	public typealias Progress = CGFloat
+
+	public final class func .. (p: CGFloat, max: UIColor) -> (UIColor) -> UIColor {
+		return { min in
+
+			let minRGBA = min.RGBA
+			let maxRGBA = max.RGBA
+
+			return UIColor(red: minRGBA.red + (maxRGBA.red - minRGBA.red) * p,
+						   green: minRGBA.green + (maxRGBA.green - minRGBA.green) * p,
+						   blue: minRGBA.blue + (maxRGBA.blue - minRGBA.blue) * p,
+						   alpha: minRGBA.alpha + (maxRGBA.alpha - minRGBA.alpha) * p)
+		}
+	}
+
+	public final class func .. (min: UIColor, rhs: (UIColor) -> UIColor) -> UIColor {
+		return rhs(min)
+	}
+
+
+	// MARK: - Helper
+
+	/// RGBA components.
+	private var RGBA: (red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat) {
+
+		var red: CGFloat = 0
+		var green: CGFloat = 0
+		var blue: CGFloat = 0
+		var alpha: CGFloat = 0
+
+		guard getRed(&red, green: &green, blue: &blue, alpha: &alpha) else { return (0, 0, 0, 0) }
+
+		return (red, green, blue, alpha)
+	}
+
+}
+
 #endif

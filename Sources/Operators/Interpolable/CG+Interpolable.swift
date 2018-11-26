@@ -86,4 +86,25 @@ extension CGRect: Interpolable {
 
 }
 
+
+// MARK: CGColor
+
+extension CGColor { /// Can't conform to Interpolable as CGColor is not final
+
+	public typealias Progress = CGFloat
+
+	public final class func .. (p: CGFloat, max: CGColor) -> (CGColor) -> CGColor {
+		return { min in
+			let minColor = UIColor(cgColor: min)
+			let maxColor = UIColor(cgColor: max)
+			return (minColor..p..maxColor).cgColor
+		}
+	}
+
+	public final class func .. (min: CGColor, rhs: (CGColor) -> CGColor) -> CGColor {
+		return rhs(min)
+	}
+
+}
+
 #endif
