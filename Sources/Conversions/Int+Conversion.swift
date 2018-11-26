@@ -55,7 +55,7 @@ extension Int {
 			return CGFloat(value)
 		}
 		#endif
-		
+
 	}
 
 }

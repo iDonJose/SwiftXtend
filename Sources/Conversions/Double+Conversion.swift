@@ -51,7 +51,7 @@ extension Double {
 			return CGFloat(value)
 		}
 		#endif
-		
+
 	}
 
 }
