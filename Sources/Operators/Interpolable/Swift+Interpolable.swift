@@ -10,6 +10,8 @@
 
 extension Float: Interpolable {
 
+	public typealias Progress = Float
+
 	public static func .. (p: Float, max: Float) -> (Float) -> Float {
 		return { min in min + (max - min) * p }
 	}
@@ -25,6 +27,8 @@ extension Float: Interpolable {
 
 extension Double: Interpolable {
 
+	public typealias Progress = Double
+
 	public static func .. (p: Double, max: Double) -> (Double) -> Double {
 		return { min in min + (max - min) * p }
 	}
@@ -39,6 +43,8 @@ extension Double: Interpolable {
 // MARK: Decimal
 
 extension Decimal: Interpolable {
+
+	public typealias Progress = Decimal
 
 	public static func .. (p: Decimal, max: Decimal) -> (Decimal) -> Decimal {
 		return { min in min + (max - min) * p }

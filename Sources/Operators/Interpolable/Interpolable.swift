@@ -9,7 +9,9 @@
 /// meaning that they represent the same object that can be in different states.
 public protocol Interpolable {
 
-	static func .. (p: Self, max: Self) -> (Self) -> Self
+	associatedtype Progress
+
+	static func .. (p: Progress, max: Self) -> (Self) -> Self
 
 	static func .. (min: Self, rhs: (Self) -> Self) -> Self
 
