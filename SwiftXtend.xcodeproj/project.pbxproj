@@ -18,6 +18,8 @@
 		825C1E0221AC2A2F0080D384 /* CGFloat+Conversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825C1E0121AC2A2F0080D384 /* CGFloat+Conversion.swift */; };
 		825C1E2821AC3CE90080D384 /* CG+Interpolable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825C1E2721AC3CE90080D384 /* CG+Interpolable.swift */; };
 		825C1E2A21AC3F930080D384 /* UIKit+Interpolable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825C1E2921AC3F930080D384 /* UIKit+Interpolable.swift */; };
+		825C1E2C21AC436F0080D384 /* CG+Similar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825C1E2B21AC436F0080D384 /* CG+Similar.swift */; };
+		825C1E3221AC43DE0080D384 /* UIKit+Similar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825C1E3121AC43DE0080D384 /* UIKit+Similar.swift */; };
 		82B180CD21AAD6F70096F7F0 /* Pair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B180CC21AAD6F70096F7F0 /* Pair.swift */; };
 		82B180CF21AAD9F00096F7F0 /* Geohash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B180CE21AAD9F00096F7F0 /* Geohash.swift */; };
 		82B180D221AAF14C0096F7F0 /* Geohash_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B180D121AAF14C0096F7F0 /* Geohash_Spec.swift */; };
@@ -86,6 +88,8 @@
 		825C1E0121AC2A2F0080D384 /* CGFloat+Conversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Conversion.swift"; sourceTree = "<group>"; };
 		825C1E2721AC3CE90080D384 /* CG+Interpolable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CG+Interpolable.swift"; sourceTree = "<group>"; };
 		825C1E2921AC3F930080D384 /* UIKit+Interpolable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit+Interpolable.swift"; sourceTree = "<group>"; };
+		825C1E2B21AC436F0080D384 /* CG+Similar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CG+Similar.swift"; sourceTree = "<group>"; };
+		825C1E3121AC43DE0080D384 /* UIKit+Similar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit+Similar.swift"; sourceTree = "<group>"; };
 		82B180CC21AAD6F70096F7F0 /* Pair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pair.swift; sourceTree = "<group>"; };
 		82B180CE21AAD9F00096F7F0 /* Geohash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geohash.swift; sourceTree = "<group>"; };
 		82B180D121AAF14C0096F7F0 /* Geohash_Spec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geohash_Spec.swift; sourceTree = "<group>"; };
@@ -252,6 +256,8 @@
 			children = (
 				8230703D21A5FECE00551BE1 /* Similar.swift */,
 				8230703F21A6006700551BE1 /* Swift+Similar.swift */,
+				825C1E2B21AC436F0080D384 /* CG+Similar.swift */,
+				825C1E3121AC43DE0080D384 /* UIKit+Similar.swift */,
 			);
 			path = Similar;
 			sourceTree = "<group>";
@@ -600,6 +606,7 @@
 				82F5198521A9F27F008A4DEC /* Float+Conversion.swift in Sources */,
 				82E645C721A7550C00F676E0 /* Decimal.swift in Sources */,
 				82F5199321AA0F31008A4DEC /* Global.swift in Sources */,
+				825C1E2C21AC436F0080D384 /* CG+Similar.swift in Sources */,
 				8230704321A60E8B00551BE1 /* Array.swift in Sources */,
 				82F5198B21A9FD50008A4DEC /* DispatchQueue.swift in Sources */,
 				8230703E21A5FECE00551BE1 /* Similar.swift in Sources */,
@@ -631,6 +638,7 @@
 				825C1E0221AC2A2F0080D384 /* CGFloat+Conversion.swift in Sources */,
 				82F5198721A9F2B2008A4DEC /* Double+Conversion.swift in Sources */,
 				82F5198D21A9FF41008A4DEC /* IndexPath.swift in Sources */,
+				825C1E3221AC43DE0080D384 /* UIKit+Similar.swift in Sources */,
 				82E645BD21A6ECA900F676E0 /* Range.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
