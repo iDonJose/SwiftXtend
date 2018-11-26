@@ -46,6 +46,12 @@ extension Float {
 			return String(value)
 		}
 
+		#if USE_UIKIT
+		public var cgFloat: CGFloat {
+			return CGFloat(value)
+		}
+		#endif
+
 	}
 
 }

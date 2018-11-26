@@ -50,6 +50,12 @@ extension UInt {
 			return IndexPath(row: int, section: 0)
 		}
 
+		#if USE_UIKIT
+		public var cgFloat: CGFloat {
+			return CGFloat(value)
+		}
+		#endif
+
 	}
 
 }

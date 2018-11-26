@@ -1,12 +1,13 @@
 //
-//  Int+Conversion.swift
-//  SwiftXtend
+//  CGFloat+Conversion.swift
+//  SwiftXtend-iOS
 //
-//  Created by José Donor on 24/11/2018.
+//  Created by José Donor on 26/11/2018.
 //
 
 
-extension Int {
+#if USE_UIKIT
+extension CGFloat {
 
 	public var to: Converter {
 		return Converter(self)
@@ -15,9 +16,9 @@ extension Int {
 
 	public struct Converter {
 
-		private let value: Int
+		private let value: CGFloat
 
-		fileprivate init (_ value: Int) {
+		fileprivate init (_ value: CGFloat) {
 			self.value = value
 		}
 
@@ -27,7 +28,11 @@ extension Int {
 		}
 
 		public var uint: UInt {
-			return UInt(double)
+			return UInt(value)
+		}
+
+		public var int: Int {
+			return Int(value)
 		}
 
 		public var float: Float {
@@ -39,23 +44,14 @@ extension Int {
 		}
 
 		public var decimal: Decimal {
-			return Decimal(value)
+			return Decimal(double)
 		}
 
 		public var string: String {
-			return String(value)
+			return value.description
 		}
 
-		public var indexPath: IndexPath {
-			return IndexPath(row: value, section: 0)
-		}
-
-		#if USE_UIKIT
-		public var cgFloat: CGFloat {
-			return CGFloat(value)
-		}
-		#endif
-		
 	}
 
 }
+#endif

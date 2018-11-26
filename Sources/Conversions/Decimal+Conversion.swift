@@ -50,6 +50,12 @@ extension Decimal {
 			return value.description
 		}
 
+		#if USE_UIKIT
+		public var cgFloat: CGFloat {
+			return CGFloat(double)
+		}
+		#endif
+
 	}
 
 }

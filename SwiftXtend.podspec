@@ -21,7 +21,23 @@ Pod::Spec.new do |s|
     s.ios.deployment_target = "8.0"
 
     s.source_files  = "Sources/**/*.{h,swift}"
+	s.exclude_files = "Sources/Conversions/CGFloat+Conversion.swift"
 
     s.frameworks = "Foundation"
+
+
+	s.subspec 'Core' do |core|
+
+	end
+
+	s.subspec 'UIKit' do |uikit|
+
+		uikit.source_files = "Sources/Conversions/CGFloat+Conversion.swift"
+		uikit.frameworks = "UIKit"
+		uikit.xcconfig = { "OTHER_SWIFT_FLAGS" => "-D USE_UIKIT" }
+
+	end
+
+	s.default_subspecs = 'Core', 'UIKit'
 
 end

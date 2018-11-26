@@ -46,6 +46,13 @@ extension Bool {
 			return String(value)
 		}
 
+
+		#if USE_UIKIT
+		public var cgFloat: CGFloat {
+			return value ? 1 : 0
+		}
+		#endif
+
 	}
 
 }

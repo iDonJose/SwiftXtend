@@ -15,6 +15,7 @@
 		8230704721A612CA00551BE1 /* Set.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8230704621A612CA00551BE1 /* Set.swift */; };
 		8230704921A612E700551BE1 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8230704821A612E700551BE1 /* Dictionary.swift */; };
 		8230706821A62CF500551BE1 /* SwiftXtend.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_89FD787D53AB9B3BD829E821B8C1438E /* SwiftXtend.framework */; };
+		825C1E0221AC2A2F0080D384 /* CGFloat+Conversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825C1E0121AC2A2F0080D384 /* CGFloat+Conversion.swift */; };
 		82B180CD21AAD6F70096F7F0 /* Pair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B180CC21AAD6F70096F7F0 /* Pair.swift */; };
 		82B180CF21AAD9F00096F7F0 /* Geohash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B180CE21AAD9F00096F7F0 /* Geohash.swift */; };
 		82B180D221AAF14C0096F7F0 /* Geohash_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B180D121AAF14C0096F7F0 /* Geohash_Spec.swift */; };
@@ -80,6 +81,7 @@
 		8230704821A612E700551BE1 /* Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
 		8230706321A62CF500551BE1 /* SwiftXtend-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftXtend-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8230706721A62CF500551BE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		825C1E0121AC2A2F0080D384 /* CGFloat+Conversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Conversion.swift"; sourceTree = "<group>"; };
 		82B180CC21AAD6F70096F7F0 /* Pair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pair.swift; sourceTree = "<group>"; };
 		82B180CE21AAD9F00096F7F0 /* Geohash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geohash.swift; sourceTree = "<group>"; };
 		82B180D121AAF14C0096F7F0 /* Geohash_Spec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geohash_Spec.swift; sourceTree = "<group>"; };
@@ -131,7 +133,7 @@
 		FR_A3256462B1201D5DCE11D6ABB4F45450 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
 		FR_ADF4996BD631C22D6569A3CC6389AD43 /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Playground.playground; sourceTree = "<group>"; };
 		FR_AE9B61E65596EDDA90108FA46A9A8A7D /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		FR_BD69130797C2062473AA3333C97D522E /* Swifty.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Swifty.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		FR_BD69130797C2062473AA3333C97D522E /* SwiftXtend.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = SwiftXtend.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		FR_FA45808725058F087CB0698522C7039B /* SwiftXtend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftXtend.h; sourceTree = "<group>"; };
 		FR_FEC99F7E256A86688D0DB83E64A26838 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -174,7 +176,7 @@
 				FR_02789A7346694959C680F6D6B0E6E780 /* .swift-version */,
 				FR_A3256462B1201D5DCE11D6ABB4F45450 /* .swiftlint.yml */,
 				FR_AE9B61E65596EDDA90108FA46A9A8A7D /* Podfile */,
-				FR_BD69130797C2062473AA3333C97D522E /* Swifty.podspec */,
+				FR_BD69130797C2062473AA3333C97D522E /* SwiftXtend.podspec */,
 				FR_FEC99F7E256A86688D0DB83E64A26838 /* LICENSE */,
 				FR_68E7DAD0A9190ECEB481F4F6C6051507 /* README.md */,
 			);
@@ -327,6 +329,7 @@
 				82F5198421A9F27F008A4DEC /* Float+Conversion.swift */,
 				82F5198621A9F2B2008A4DEC /* Double+Conversion.swift */,
 				82F5198821A9F2E3008A4DEC /* Decimal+Conversion.swift */,
+				825C1E0121AC2A2F0080D384 /* CGFloat+Conversion.swift */,
 			);
 			path = Conversions;
 			sourceTree = "<group>";
@@ -617,6 +620,7 @@
 				82E645C521A754EF00F676E0 /* Double.swift in Sources */,
 				82F5196521A920B7008A4DEC /* Date.swift in Sources */,
 				82F5196121A89290008A4DEC /* Interpolable.swift in Sources */,
+				825C1E0221AC2A2F0080D384 /* CGFloat+Conversion.swift in Sources */,
 				82F5198721A9F2B2008A4DEC /* Double+Conversion.swift in Sources */,
 				82F5198D21A9FF41008A4DEC /* IndexPath.swift in Sources */,
 				82E645BD21A6ECA900F676E0 /* Range.swift in Sources */,
@@ -828,10 +832,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+				);
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -Xfrontend -warn-long-function-bodies=100 -Xfrontend -warn-long-expression-type-checking=100";
+				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -Xfrontend -warn-long-function-bodies=100 -Xfrontend -warn-long-expression-type-checking=100 -D USE_UIKIT";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.iDonJose.SwiftXtend-iOS";
 				PRODUCT_NAME = SwiftXtend;
 				SDKROOT = iphoneos;
