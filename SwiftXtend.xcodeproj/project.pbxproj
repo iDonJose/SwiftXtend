@@ -20,6 +20,7 @@
 		825C1E2A21AC3F930080D384 /* UIKit+Interpolable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825C1E2921AC3F930080D384 /* UIKit+Interpolable.swift */; };
 		825C1E2C21AC436F0080D384 /* CG+Similar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825C1E2B21AC436F0080D384 /* CG+Similar.swift */; };
 		825C1E3221AC43DE0080D384 /* UIKit+Similar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825C1E3121AC43DE0080D384 /* UIKit+Similar.swift */; };
+		828727E621AD339A00819150 /* UIKit+Randomizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828727E521AD339A00819150 /* UIKit+Randomizable.swift */; };
 		82B180CD21AAD6F70096F7F0 /* Pair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B180CC21AAD6F70096F7F0 /* Pair.swift */; };
 		82B180CF21AAD9F00096F7F0 /* Geohash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B180CE21AAD9F00096F7F0 /* Geohash.swift */; };
 		82B180D221AAF14C0096F7F0 /* Geohash_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B180D121AAF14C0096F7F0 /* Geohash_Spec.swift */; };
@@ -90,6 +91,7 @@
 		825C1E2921AC3F930080D384 /* UIKit+Interpolable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit+Interpolable.swift"; sourceTree = "<group>"; };
 		825C1E2B21AC436F0080D384 /* CG+Similar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CG+Similar.swift"; sourceTree = "<group>"; };
 		825C1E3121AC43DE0080D384 /* UIKit+Similar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit+Similar.swift"; sourceTree = "<group>"; };
+		828727E521AD339A00819150 /* UIKit+Randomizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit+Randomizable.swift"; sourceTree = "<group>"; };
 		82B180CC21AAD6F70096F7F0 /* Pair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pair.swift; sourceTree = "<group>"; };
 		82B180CE21AAD9F00096F7F0 /* Geohash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geohash.swift; sourceTree = "<group>"; };
 		82B180D121AAF14C0096F7F0 /* Geohash_Spec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geohash_Spec.swift; sourceTree = "<group>"; };
@@ -269,6 +271,7 @@
 				82E645AE21A6CCDC00F676E0 /* Swift+Randomizable.swift */,
 				82E645B021A6CDA100F676E0 /* Collection+Randomizable.swift */,
 				82E645BA21A6E60A00F676E0 /* Range+Randomizable.swift */,
+				828727E521AD339A00819150 /* UIKit+Randomizable.swift */,
 			);
 			path = Randomizable;
 			sourceTree = "<group>";
@@ -618,6 +621,7 @@
 				82F5196F21A9683B008A4DEC /* Swift+Initializable.swift in Sources */,
 				82F5198321A9F196008A4DEC /* Int+Conversion.swift in Sources */,
 				82F5196A21A96627008A4DEC /* Identifiable.swift in Sources */,
+				828727E621AD339A00819150 /* UIKit+Randomizable.swift in Sources */,
 				82E645C321A754D300F676E0 /* Float.swift in Sources */,
 				82F5198121A9F14D008A4DEC /* Bool+Conversion.swift in Sources */,
 				825C1E2A21AC3F930080D384 /* UIKit+Interpolable.swift in Sources */,

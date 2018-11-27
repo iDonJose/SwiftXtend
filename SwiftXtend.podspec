@@ -22,6 +22,7 @@ Pod::Spec.new do |s|
 
     s.source_files  = "Sources/**/*.{h,swift}"
 	s.exclude_files = [
+		"Sources/Protocols/Randomizable/UIKit+Randomizable.swift",
 		"Sources/Conversions/CGFloat+Conversion.swift",
 		"Sources/Operators/Interpolable/CG+Interpolable.swift",
 		"Sources/Operators/Interpolable/UIKit+Interpolable.swift",
@@ -39,6 +40,7 @@ Pod::Spec.new do |s|
 	s.subspec 'UIKit' do |uikit|
 
 		uikit.source_files = [
+			"Sources/Protocols/Randomizable/UIKit+Randomizable.swift",
 			"Sources/Conversions/CGFloat+Conversion.swift",
 			"Sources/Operators/Interpolable/CG+Interpolable.swift",
 			"Sources/Operators/Interpolable/UIKit+Interpolable.swift",
