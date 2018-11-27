@@ -22,12 +22,8 @@ Pod::Spec.new do |s|
 
     s.source_files  = "Sources/**/*.{h,swift}"
 	s.exclude_files = [
-		"Sources/Protocols/Randomizable/UIKit+Randomizable.swift",
-		"Sources/Conversions/CGFloat+Conversion.swift",
-		"Sources/Operators/Interpolable/CG+Interpolable.swift",
-		"Sources/Operators/Interpolable/UIKit+Interpolable.swift",
-		"Sources/Operators/Similar/CG+Similar.swift",
-		"Sources/Operators/Similar/UIKit+Similar.swift"
+		"Sources/**/UIKit+*.swift",
+		"Sources/**/CG+*.swift"
 	]
 
     s.frameworks = "Foundation"
@@ -40,12 +36,8 @@ Pod::Spec.new do |s|
 	s.subspec 'UIKit' do |uikit|
 
 		uikit.source_files = [
-			"Sources/Protocols/Randomizable/UIKit+Randomizable.swift",
-			"Sources/Conversions/CGFloat+Conversion.swift",
-			"Sources/Operators/Interpolable/CG+Interpolable.swift",
-			"Sources/Operators/Interpolable/UIKit+Interpolable.swift",
-			"Sources/Operators/Similar/CG+Similar.swift",
-			"Sources/Operators/Similar/UIKit+Similar.swift"
+			"Sources/**/UIKit+*.swift",
+			"Sources/**/CG+*.swift"
 		]
 		uikit.frameworks = "UIKit"
 		uikit.xcconfig = { "OTHER_SWIFT_FLAGS" => "-D USE_UIKIT" }
