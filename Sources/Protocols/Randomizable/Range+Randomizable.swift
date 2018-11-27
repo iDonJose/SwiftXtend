@@ -114,7 +114,10 @@ extension Range where Bound == Float {
 
 	public var random: Float? {
 		guard isNotEmpty else { return nil }
-		return (lowerBound...upperBound - 1).random
+		let random = (lowerBound...upperBound).random
+		return random != upperBound
+			? random
+			: self.random
 	}
 
 }
@@ -135,7 +138,10 @@ extension Range where Bound == Double {
 
 	public var random: Double? {
 		guard isNotEmpty else { return nil }
-		return ClosedRange(uncheckedBounds: (lowerBound, upperBound - 1)).random
+		let random = (lowerBound...upperBound).random
+		return random != upperBound
+			? random
+			: self.random
 	}
 
 }
@@ -159,7 +165,10 @@ extension Range where Bound == Decimal {
 
 	public var random: Decimal? {
 		guard isNotEmpty else { return nil }
-		return ClosedRange(uncheckedBounds: (lowerBound, upperBound - 1)).random
+		let random = (lowerBound...upperBound).random
+		return random != upperBound
+			? random
+			: self.random
 	}
 
 }
@@ -175,7 +184,7 @@ private func randomOpen() -> Double {
 }
 
 /// Double in [0, 1]
-private func randomClosed() -> Double {
+func randomClosed() -> Double {
 	return randomHalfOpen() * scale / (scale - 1.5)
 }
 
