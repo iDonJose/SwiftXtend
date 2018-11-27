@@ -6,8 +6,6 @@
 //
 
 
-#if USE_UIKIT
-
 // MARK: Range of CGFloat
 
 extension ClosedRange where Bound == CGFloat {
@@ -45,5 +43,3 @@ extension UIColor { // Can't conform to Randomizable as UIColor is not final
 	}
 
 }
-
-#endif

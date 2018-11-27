@@ -6,8 +6,6 @@
 //
 
 
-#if USE_UIKIT
-
 // MARK: CGFloat
 
 extension CGFloat: Interpolable {
@@ -106,5 +104,3 @@ extension CGColor { /// Can't conform to Interpolable as CGColor is not final
 	}
 
 }
-
-#endif

@@ -6,8 +6,6 @@
 //
 
 
-#if USE_UIKIT
-
 // MARK: UIEdgeInsets
 
 extension UIEdgeInsets: Interpolable {
@@ -70,5 +68,3 @@ extension UIColor { /// Can't conform to Interpolable as UIColor is not final
 	}
 
 }
-
-#endif

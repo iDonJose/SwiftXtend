@@ -6,8 +6,6 @@
 //
 
 
-#if USE_UIKIT
-
 extension UIEdgeInsets: Similar {
 	public static func ~~ (lhs: UIEdgeInsets, rhs: UIEdgeInsets) -> Bool { return lhs == rhs }
 }
@@ -19,5 +17,3 @@ extension UIColor: Similar {
 extension UIFont: Similar {
 	public static func ~~ (lhs: UIFont, rhs: UIFont) -> Bool { return lhs == rhs }
 }
-
-#endif
