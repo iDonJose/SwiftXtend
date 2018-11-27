@@ -16,4 +16,8 @@ extension UIColor: Similar {
 	public static func ~~ (lhs: UIColor, rhs: UIColor) -> Bool { return lhs == rhs }
 }
 
+extension UIFont: Similar {
+	public static func ~~ (lhs: UIFont, rhs: UIFont) -> Bool { return lhs == rhs }
+}
+
 #endif
