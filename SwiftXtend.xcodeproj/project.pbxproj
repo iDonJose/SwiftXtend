@@ -15,7 +15,6 @@
 		8230704721A612CA00551BE1 /* Set.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8230704621A612CA00551BE1 /* Set.swift */; };
 		8230704921A612E700551BE1 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8230704821A612E700551BE1 /* Dictionary.swift */; };
 		8230706821A62CF500551BE1 /* SwiftXtend.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_89FD787D53AB9B3BD829E821B8C1438E /* SwiftXtend.framework */; };
-		825C1E0221AC2A2F0080D384 /* CGFloat+Conversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825C1E0121AC2A2F0080D384 /* CGFloat+Conversion.swift */; };
 		825C1E2821AC3CE90080D384 /* CG+Interpolable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825C1E2721AC3CE90080D384 /* CG+Interpolable.swift */; };
 		825C1E2A21AC3F930080D384 /* UIKit+Interpolable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825C1E2921AC3F930080D384 /* UIKit+Interpolable.swift */; };
 		825C1E2C21AC436F0080D384 /* CG+Similar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825C1E2B21AC436F0080D384 /* CG+Similar.swift */; };
@@ -86,7 +85,6 @@
 		8230704821A612E700551BE1 /* Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
 		8230706321A62CF500551BE1 /* SwiftXtend-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftXtend-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8230706721A62CF500551BE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		825C1E0121AC2A2F0080D384 /* CGFloat+Conversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Conversion.swift"; sourceTree = "<group>"; };
 		825C1E2721AC3CE90080D384 /* CG+Interpolable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CG+Interpolable.swift"; sourceTree = "<group>"; };
 		825C1E2921AC3F930080D384 /* UIKit+Interpolable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit+Interpolable.swift"; sourceTree = "<group>"; };
 		825C1E2B21AC436F0080D384 /* CG+Similar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CG+Similar.swift"; sourceTree = "<group>"; };
@@ -344,7 +342,6 @@
 				82F5198421A9F27F008A4DEC /* Float+Conversion.swift */,
 				82F5198621A9F2B2008A4DEC /* Double+Conversion.swift */,
 				82F5198821A9F2E3008A4DEC /* Decimal+Conversion.swift */,
-				825C1E0121AC2A2F0080D384 /* CGFloat+Conversion.swift */,
 			);
 			path = Conversions;
 			sourceTree = "<group>";
@@ -639,7 +636,6 @@
 				82E645C521A754EF00F676E0 /* Double.swift in Sources */,
 				82F5196521A920B7008A4DEC /* Date.swift in Sources */,
 				82F5196121A89290008A4DEC /* Interpolable.swift in Sources */,
-				825C1E0221AC2A2F0080D384 /* CGFloat+Conversion.swift in Sources */,
 				82F5198721A9F2B2008A4DEC /* Double+Conversion.swift in Sources */,
 				82F5198D21A9FF41008A4DEC /* IndexPath.swift in Sources */,
 				825C1E3221AC43DE0080D384 /* UIKit+Similar.swift in Sources */,
