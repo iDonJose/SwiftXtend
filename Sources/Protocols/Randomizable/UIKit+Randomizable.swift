@@ -5,6 +5,8 @@
 //  Created by José Donor on 27/11/2018.
 //
 
+#if USE_UIKit
+
 
 // MARK: Range of CGFloat
 
@@ -43,3 +45,5 @@ extension UIColor { // Can't conform to Randomizable as UIColor is not final
 	}
 
 }
+
+#endif

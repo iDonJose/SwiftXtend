@@ -5,6 +5,8 @@
 //  Created by José Donor on 26/11/2018.
 //
 
+#if USE_UIKit
+
 
 // MARK: CGFloat
 
@@ -104,3 +106,5 @@ extension CGColor { /// Can't conform to Interpolable as CGColor is not final
 	}
 
 }
+
+#endif

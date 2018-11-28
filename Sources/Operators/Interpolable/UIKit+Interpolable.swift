@@ -5,6 +5,8 @@
 //  Created by José Donor on 26/11/2018.
 //
 
+#if USE_UIKit
+
 
 // MARK: UIEdgeInsets
 
@@ -68,3 +70,5 @@ extension UIColor { /// Can't conform to Interpolable as UIColor is not final
 	}
 
 }
+
+#endif

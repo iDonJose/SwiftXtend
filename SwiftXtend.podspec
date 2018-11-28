@@ -20,26 +20,16 @@ Pod::Spec.new do |s|
 
     s.ios.deployment_target = "8.0"
 
-    s.source_files  = "Sources/**/*.{h,swift}"
-	s.exclude_files = [
-		"Sources/**/UIKit+*.swift",
-		"Sources/**/CG+*.swift"
-	]
-
-    s.frameworks = "Foundation"
-
 
 	s.subspec 'Core' do |core|
-
+		core.frameworks = "Foundation"
+		core.source_files  = "Sources/**/*.{h,swift}"
 	end
 
 	s.subspec 'UIKit' do |uikit|
 
-		uikit.source_files = [
-			"Sources/**/UIKit+*.swift",
-			"Sources/**/CG+*.swift"
-		]
 		uikit.frameworks = "UIKit"
+		uikit.dependency 'SwiftXtend/Core'
 		uikit.xcconfig = { "OTHER_SWIFT_FLAGS" => "-D USE_UIKIT" }
 
 	end

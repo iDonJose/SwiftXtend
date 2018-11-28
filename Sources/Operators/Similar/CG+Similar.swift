@@ -5,6 +5,8 @@
 //  Created by José Donor on 26/11/2018.
 //
 
+#if USE_UIKit
+
 
 extension CGFloat: Similar {
 	public static func ~~ (lhs: CGFloat, rhs: CGFloat) -> Bool { return lhs == rhs }
@@ -30,3 +32,5 @@ extension CGRect: Similar {
 extension CGColor: Similar {
 	public static func ~~ (lhs: CGColor, rhs: CGColor) -> Bool { return lhs == rhs }
 }
+
+#endif
