@@ -20,6 +20,7 @@
  - [Either](Either) : Wrapper of two different possible values
  - [Geohash](Geohash) : Helper for converting from geolocation to geohash and vice-versa
  - [Hash](Hash) : Helper for generating hash values
+ - [NSWrapper](NSWrapper) : An NSObject as wrapper
  - [Pair](Pair) : A pair of two objects
  - [Ticker](Ticker) : A timer
 
