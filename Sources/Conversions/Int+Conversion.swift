@@ -12,6 +12,13 @@ extension Int {
 		return Converter(self)
 	}
 
+}
+
+
+#if USE_UIKIT
+import UIKit
+
+extension Int {
 
 	public struct Converter {
 
@@ -50,12 +57,57 @@ extension Int {
 			return IndexPath(row: value, section: 0)
 		}
 
-		#if USE_UIKIT
 		public var cgFloat: CGFloat {
 			return CGFloat(value)
 		}
-		#endif
 
 	}
 
 }
+
+#else
+
+extension Int {
+
+	public struct Converter {
+
+		private let value: Int
+
+		fileprivate init (_ value: Int) {
+			self.value = value
+		}
+
+
+		public var bool: Bool {
+			return Bool(value != 0)
+		}
+
+		public var uint: UInt {
+			return UInt(double)
+		}
+
+		public var float: Float {
+			return Float(value)
+		}
+
+		public var double: Double {
+			return Double(value)
+		}
+
+		public var decimal: Decimal {
+			return Decimal(value)
+		}
+
+		public var string: String {
+			return String(value)
+		}
+
+		public var indexPath: IndexPath {
+			return IndexPath(row: value, section: 0)
+		}
+
+	}
+
+}
+
+#endif

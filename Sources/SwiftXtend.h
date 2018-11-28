@@ -6,7 +6,8 @@
 //  Copyright © 2018 iDonJose. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
 
 //! Project version number for SwiftXtend.
 FOUNDATION_EXPORT double SwiftXtendVersionNumber;

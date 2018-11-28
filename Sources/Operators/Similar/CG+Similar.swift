@@ -5,7 +5,9 @@
 //  Created by José Donor on 26/11/2018.
 //
 
-#if USE_UIKit
+#if USE_UIKIT
+import UIKit
+
 
 
 extension CGFloat: Similar {
