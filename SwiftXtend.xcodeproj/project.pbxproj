@@ -19,6 +19,8 @@
 		825C1E2C21AC436F0080D384 /* CG+Similar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825C1E2B21AC436F0080D384 /* CG+Similar.swift */; };
 		825C1E3221AC43DE0080D384 /* UIKit+Similar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825C1E3121AC43DE0080D384 /* UIKit+Similar.swift */; };
 		828727E621AD339A00819150 /* UIKit+Randomizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828727E521AD339A00819150 /* UIKit+Randomizable.swift */; };
+		82A18AA221B9A84A00ED070D /* Function.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A18AA121B9A84A00ED070D /* Function.swift */; };
+		82A18AA421B9DB2200ED070D /* Vector2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A18AA321B9DB2200ED070D /* Vector2D.swift */; };
 		82B180CD21AAD6F70096F7F0 /* Pair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B180CC21AAD6F70096F7F0 /* Pair.swift */; };
 		82B180CF21AAD9F00096F7F0 /* Geohash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B180CE21AAD9F00096F7F0 /* Geohash.swift */; };
 		82B180D221AAF14C0096F7F0 /* Geohash_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B180D121AAF14C0096F7F0 /* Geohash_Spec.swift */; };
@@ -242,6 +244,7 @@
 			isa = PBXGroup;
 			children = (
 				82B180D521AAF9BC0096F7F0 /* Either.swift */,
+				82A18AA121B9A84A00ED070D /* Function.swift */,
 				82B180CE21AAD9F00096F7F0 /* Geohash.swift */,
 				82B180D721AAFBFB0096F7F0 /* Hash.swift */,
 				82D6371921AEDCBF001B3E30 /* NSWrapper.swift */,
@@ -615,6 +618,7 @@
 				825C1E2C21AC436F0080D384 /* CG+Similar.swift in Sources */,
 				8230704321A60E8B00551BE1 /* Array.swift in Sources */,
 				82F5198B21A9FD50008A4DEC /* DispatchQueue.swift in Sources */,
+				82A18AA221B9A84A00ED070D /* Function.swift in Sources */,
 				8230703E21A5FECE00551BE1 /* Similar.swift in Sources */,
 				8230704021A6006700551BE1 /* Swift+Similar.swift in Sources */,
 				82B180CF21AAD9F00096F7F0 /* Geohash.swift in Sources */,
