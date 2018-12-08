@@ -92,6 +92,8 @@
 		825C1E2B21AC436F0080D384 /* CG+Similar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CG+Similar.swift"; sourceTree = "<group>"; };
 		825C1E3121AC43DE0080D384 /* UIKit+Similar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit+Similar.swift"; sourceTree = "<group>"; };
 		828727E521AD339A00819150 /* UIKit+Randomizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit+Randomizable.swift"; sourceTree = "<group>"; };
+		82A18AA121B9A84A00ED070D /* Function.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Function.swift; sourceTree = "<group>"; };
+		82A18AA321B9DB2200ED070D /* Vector2D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vector2D.swift; sourceTree = "<group>"; };
 		82B180CC21AAD6F70096F7F0 /* Pair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pair.swift; sourceTree = "<group>"; };
 		82B180CE21AAD9F00096F7F0 /* Geohash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geohash.swift; sourceTree = "<group>"; };
 		82B180D121AAF14C0096F7F0 /* Geohash_Spec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geohash_Spec.swift; sourceTree = "<group>"; };
@@ -245,6 +247,7 @@
 				82D6371921AEDCBF001B3E30 /* NSWrapper.swift */,
 				82B180CC21AAD6F70096F7F0 /* Pair.swift */,
 				82B180D321AAF5210096F7F0 /* Ticker.swift */,
+				82A18AA321B9DB2200ED070D /* Vector2D.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -633,6 +636,7 @@
 				82B180CD21AAD6F70096F7F0 /* Pair.swift in Sources */,
 				82F5197C21A9E81E008A4DEC /* TimeZone.swift in Sources */,
 				8230704921A612E700551BE1 /* Dictionary.swift in Sources */,
+				82A18AA421B9DB2200ED070D /* Vector2D.swift in Sources */,
 				82F5197821A9D4E3008A4DEC /* Bool.swift in Sources */,
 				82F5197F21A9EF14008A4DEC /* UInt+Conversion.swift in Sources */,
 				82E645BF21A752BE00F676E0 /* Int.swift in Sources */,
