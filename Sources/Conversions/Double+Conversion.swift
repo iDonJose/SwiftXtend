@@ -53,6 +53,10 @@ extension Double {
 			return String(value)
 		}
 
+		public var cgFloat: CGFloat {
+			return CGFloat(value)
+        }
+
 	}
 
 }
