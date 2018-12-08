@@ -5,9 +5,6 @@
 //  Created by José Donor on 28/11/2018.
 //
 
-// swiftlint:disable force_cast
-
-
 
 /// Wraps a Swift type in an NSObject
 public final class NSWrapper<Value>: NSObject {
