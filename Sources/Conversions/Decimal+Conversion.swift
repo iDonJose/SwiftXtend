@@ -60,7 +60,7 @@ extension Decimal {
         public var nsNumber: NSNumber {
             return NSNumber(value: double)
         }
-        
+
 		public var cgFloat: CGFloat {
 			return CGFloat(double)
 		}
