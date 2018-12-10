@@ -57,6 +57,10 @@ extension Decimal {
 			return value.description
 		}
 
+        public var nsNumber: NSNumber {
+            return NSNumber(value: double)
+        }
+        
 		public var cgFloat: CGFloat {
 			return CGFloat(double)
 		}
@@ -105,6 +109,10 @@ extension Decimal {
 		public var string: String {
 			return value.description
 		}
+
+        public var nsNumber: NSNumber {
+            return NSNumber(value: double)
+        }
 
 	}
 

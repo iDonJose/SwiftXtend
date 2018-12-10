@@ -53,6 +53,10 @@ extension Bool {
 			return String(value)
 		}
 
+        public var nsNumber: NSNumber {
+            return NSNumber(value: int)
+        }
+
 		public var cgFloat: CGFloat {
 			return value ? 1 : 0
 		}
@@ -97,6 +101,10 @@ extension Bool {
 		public var string: String {
 			return String(value)
 		}
+
+        public var nsNumber: NSNumber {
+            return NSNumber(value: int)
+        }
 
 	}
 

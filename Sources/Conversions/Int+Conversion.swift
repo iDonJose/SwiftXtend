@@ -57,6 +57,10 @@ extension Int {
 			return IndexPath(row: value, section: 0)
 		}
 
+        public var nsNumber: NSNumber {
+            return NSNumber(value: value)
+        }
+
 		public var cgFloat: CGFloat {
 			return CGFloat(value)
 		}
@@ -105,6 +109,10 @@ extension Int {
 		public var indexPath: IndexPath {
 			return IndexPath(row: value, section: 0)
 		}
+
+        public var nsNumber: NSNumber {
+            return NSNumber(value: value)
+        }
 
 	}
 

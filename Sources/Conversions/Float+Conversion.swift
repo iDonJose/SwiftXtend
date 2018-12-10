@@ -53,6 +53,10 @@ extension Float {
 			return String(value)
 		}
 
+        public var nsNumber: NSNumber {
+            return NSNumber(value: value)
+        }
+
 		public var cgFloat: CGFloat {
 			return CGFloat(value)
 		}
@@ -97,6 +101,10 @@ extension Float {
 		public var string: String {
 			return String(value)
 		}
+
+        public var nsNumber: NSNumber {
+            return NSNumber(value: value)
+        }
 
 	}
 
