@@ -62,6 +62,7 @@
 		82F5198D21A9FF41008A4DEC /* IndexPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F5198C21A9FF41008A4DEC /* IndexPath.swift */; };
 		82F5199021AA0BA7008A4DEC /* String_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F5198F21AA0BA7008A4DEC /* String_Spec.swift */; };
 		82F5199321AA0F31008A4DEC /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F5199121AA0E1A008A4DEC /* Global.swift */; };
+		82FA72F921BEA0F400149F16 /* NSNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FA72F821BEA0F400149F16 /* NSNumber.swift */; };
 		82FA72FB21BEA19F00149F16 /* NSNumber+Conversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FA72FA21BEA19F00149F16 /* NSNumber+Conversion.swift */; };
 		B014336BE65BEA62B7D5E2AD /* Pods_SwiftXtend_Tests_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09CA3C09A8733C16950C7555 /* Pods_SwiftXtend_Tests_iOS.framework */; };
 		BF_B8E6FAD24D40296980B30B6452299203 /* SwiftXtend.h in Headers */ = {isa = PBXBuildFile; fileRef = FR_FA45808725058F087CB0698522C7039B /* SwiftXtend.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -140,6 +141,7 @@
 		82F5198C21A9FF41008A4DEC /* IndexPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexPath.swift; sourceTree = "<group>"; };
 		82F5198F21AA0BA7008A4DEC /* String_Spec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String_Spec.swift; sourceTree = "<group>"; };
 		82F5199121AA0E1A008A4DEC /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		82FA72F821BEA0F400149F16 /* NSNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSNumber.swift; sourceTree = "<group>"; };
 		82FA72FA21BEA19F00149F16 /* NSNumber+Conversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSNumber+Conversion.swift"; sourceTree = "<group>"; };
 		A2F57FBB04938C73852B989F /* Pods-SwiftXtend-Tests-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftXtend-Tests-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftXtend-Tests-iOS/Pods-SwiftXtend-Tests-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		DD59F9B03FB15F0DAFC51568 /* Pods-SwiftXtend-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftXtend-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftXtend-iOS/Pods-SwiftXtend-iOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -380,6 +382,14 @@
 			path = Swift;
 			sourceTree = "<group>";
 		};
+		82FA72F721BEA0E100149F16 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				82FA72F821BEA0F400149F16 /* NSNumber.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
 		G_12203CC8FD6EF46E10AD03BD331D2983 = {
 			isa = PBXGroup;
 			children = (
@@ -404,6 +414,7 @@
 				82F5196821A96615008A4DEC /* Protocols */,
 				8230704121A60E7300551BE1 /* Collections */,
 				82E645B221A6E00100F676E0 /* Swift */,
+				82FA72F721BEA0E100149F16 /* Foundation */,
 				82F5197D21A9EE0C008A4DEC /* Conversions */,
 				8230703C21A5FEB800551BE1 /* Operators */,
 			);
