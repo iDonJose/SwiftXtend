@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		822CE32521BDCEC8003503BB /* NumberFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822CE32421BDCEC8003503BB /* NumberFormatter.swift */; };
 		8230703E21A5FECE00551BE1 /* Similar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8230703D21A5FECE00551BE1 /* Similar.swift */; };
 		8230704021A6006700551BE1 /* Swift+Similar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8230703F21A6006700551BE1 /* Swift+Similar.swift */; };
 		8230704321A60E8B00551BE1 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8230704221A60E8B00551BE1 /* Array.swift */; };
@@ -81,6 +82,7 @@
 		3ABCF013B323D3945EC4EFA8 /* Pods-SwiftXtend-Tests-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftXtend-Tests-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftXtend-Tests-iOS/Pods-SwiftXtend-Tests-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		3F46559B6B58C4F33927344B /* Pods_SwiftXtend_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftXtend_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		66A8DDB16546E4F8584FDF3B /* Pods-SwiftXtend-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftXtend-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftXtend-iOS/Pods-SwiftXtend-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		822CE32421BDCEC8003503BB /* NumberFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFormatter.swift; sourceTree = "<group>"; };
 		8230703D21A5FECE00551BE1 /* Similar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Similar.swift; sourceTree = "<group>"; };
 		8230703F21A6006700551BE1 /* Swift+Similar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Swift+Similar.swift"; sourceTree = "<group>"; };
 		8230704221A60E8B00551BE1 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
@@ -306,6 +308,7 @@
 				82E645C221A754D300F676E0 /* Float.swift */,
 				82F5198C21A9FF41008A4DEC /* IndexPath.swift */,
 				82E645BE21A752BE00F676E0 /* Int.swift */,
+				822CE32421BDCEC8003503BB /* NumberFormatter.swift */,
 				82E645BC21A6ECA900F676E0 /* Range.swift */,
 				82E645B321A6E01B00F676E0 /* String.swift */,
 				82F5197B21A9E81E008A4DEC /* TimeZone.swift */,
@@ -624,6 +627,7 @@
 				82B180CF21AAD9F00096F7F0 /* Geohash.swift in Sources */,
 				82F5197A21A9E3B5008A4DEC /* Calendar.swift in Sources */,
 				82E645B121A6CDA100F676E0 /* Collection+Randomizable.swift in Sources */,
+				822CE32521BDCEC8003503BB /* NumberFormatter.swift in Sources */,
 				82F5196721A959A2008A4DEC /* Bundle.swift in Sources */,
 				82F5196F21A9683B008A4DEC /* Swift+Initializable.swift in Sources */,
 				82F5198321A9F196008A4DEC /* Int+Conversion.swift in Sources */,
