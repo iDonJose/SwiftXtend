@@ -24,9 +24,11 @@ extension Decimal {
 	}
 
 	/// Restricts value to a given range.
-	public func `in`(_ minimum: Decimal,
-					 _ maximum: Decimal) -> Decimal {
-		return min(minimum).max(maximum)
+	public func `in`(_ a: Decimal,
+					 _ b: Decimal) -> Decimal {
+		return a < b
+            ? min(a).max(b)
+            : min(b).max(a)
 	}
 
 }

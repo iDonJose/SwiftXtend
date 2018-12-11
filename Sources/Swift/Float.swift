@@ -24,9 +24,11 @@ extension Float {
 	}
 
 	/// Restricts value to a given range.
-	public func `in`(_ minimum: Float,
-					 _ maximum: Float) -> Float {
-		return min(minimum).max(maximum)
+	public func `in`(_ a: Float,
+					 _ b: Float) -> Float {
+		return a < b
+            ? min(a).max(b)
+            : min(b).max(a)
 	}
 
 	/// Rounds down to nearest integer.

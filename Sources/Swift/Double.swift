@@ -24,9 +24,11 @@ extension Double {
 	}
 
 	/// Restricts value to a given range.
-	public func `in`(_ minimum: Double,
-					 _ maximum: Double) -> Double {
-		return min(minimum).max(maximum)
+	public func `in`(_ a: Double,
+					 _ b: Double) -> Double {
+		return a < b
+            ? min(a).max(b)
+            : min(b).max(a)
 	}
 
 	/// Rounds down to nearest integer.

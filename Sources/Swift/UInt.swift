@@ -19,9 +19,11 @@ extension UInt {
 	}
 
 	/// Restricts value to a given range.
-	public func `in`(_ minimum: UInt,
-					 _ maximum: UInt) -> UInt {
-		return min(minimum).max(maximum)
+	public func `in`(_ a: UInt,
+					 _ b: UInt) -> UInt {
+		return a < b
+            ? min(a).max(b)
+            : min(b).max(a)
 	}
 
 }

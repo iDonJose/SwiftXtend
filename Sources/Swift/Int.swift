@@ -24,9 +24,11 @@ extension Int {
 	}
 
 	/// Restricts value to a given range.
-	public func `in`(_ minimum: Int,
-					 _ maximum: Int) -> Int {
-		return min(minimum).max(maximum)
+	public func `in`(_ a: Int,
+					 _ b: Int) -> Int {
+		return a < b
+            ? min(a).max(b)
+            : min(b).max(a)
 	}
 
 }
