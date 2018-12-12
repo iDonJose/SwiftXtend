@@ -31,9 +31,9 @@ extension NumberFormatter {
         if let minimumFractionDigits = minimumFractionDigits { self.minimumFractionDigits = minimumFractionDigits }
         if let minimumSignificantDigits = minimumSignificantDigits { self.minimumSignificantDigits = minimumSignificantDigits }
 
-		if let minimumIntegerDigits = minimumIntegerDigits { self.minimumIntegerDigits = minimumIntegerDigits }
-		if let minimumFractionDigits = minimumFractionDigits { self.minimumFractionDigits = minimumFractionDigits }
-		if let minimumSignificantDigits = minimumSignificantDigits { self.minimumSignificantDigits = minimumSignificantDigits }
+		if let maximumIntegerDigits = maximumIntegerDigits { self.maximumIntegerDigits = maximumIntegerDigits }
+		if let maximumFractionDigits = maximumFractionDigits { self.maximumFractionDigits = maximumFractionDigits }
+		if let maximumSignificantDigits = maximumSignificantDigits { self.maximumSignificantDigits = maximumSignificantDigits }
 
 		if let groupingSize = groupingSize {
 			self.groupingSize = groupingSize
@@ -50,5 +50,38 @@ extension NumberFormatter {
 		if let locale = locale { self.locale = locale }
 
 	}
+
+
+    // MARK: - Formatting
+
+    /// Formats a Bool
+    public func string(from value: Bool) -> String? {
+        return string(from: value.to.nsNumber)
+    }
+
+    /// Formats a UInt
+    public func string(from value: UInt) -> String? {
+        return string(from: value.to.nsNumber)
+    }
+
+    /// Formats a Int
+    public func string(from value: Int) -> String? {
+        return string(from: value.to.nsNumber)
+    }
+
+    /// Formats a Float
+    public func string(from value: Float) -> String? {
+        return string(from: value.to.nsNumber)
+    }
+
+    /// Formats a Double
+    public func string(from value: Double) -> String? {
+        return string(from: value.to.nsNumber)
+    }
+
+    /// Formats a Decimal
+    public func string(from value: Decimal) -> String? {
+        return string(from: value.to.nsNumber)
+    }
 
 }
