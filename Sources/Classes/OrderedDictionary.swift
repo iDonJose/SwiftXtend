@@ -76,7 +76,7 @@ public struct OrderedDictionary<Key: Hashable, Value>: ExpressibleByDictionaryLi
 	public subscript(key: Key) -> Value? {
 		get { return dictionary[key] }
 		set {
-			let oldValue = remove(key: key)
+			let oldValue = dictionary.removeValue(forKey: key)
 			dictionary[key] = newValue
 			if oldValue == nil && newValue != nil { keys.append(key) }
 		}
