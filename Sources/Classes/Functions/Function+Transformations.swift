@@ -8,13 +8,6 @@
 
 extension Function {
 
-	/// Sorts control points
-	public func sorted() -> Function {
-		let controlPoints = self.controlPoints.sorted { $0.x < $1.x }
-		return Function(controlPoints: controlPoints)!
-	}
-
-
 	/// Generates a new Function that is the central symetric of this one
 	public func centralSymetric(through center: Vector2D) -> Function {
 
