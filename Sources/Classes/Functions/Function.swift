@@ -40,7 +40,7 @@ public struct Function {
     }
 
 
-	public func f(x: Double) -> Double {
+	public func f(_ x: Double) -> Double {
 
 		guard controlPoints.isNotEmpty else { return 0 }
 
