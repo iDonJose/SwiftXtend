@@ -18,4 +18,4 @@ public protocol Interpolable {
 }
 
 
-infix operator ..: TernaryPrecedence
+infix operator ..: NilCoalescingPrecedence
