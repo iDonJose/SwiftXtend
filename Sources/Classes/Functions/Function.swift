@@ -328,7 +328,7 @@ public struct Function {
 
 		case point(Vector2D)
 		case tangent(point: Vector2D, tangent: Vector2D)
-		case angular(point: Vector2D, left: Vector2D, right: Vector2D)
+		case semiTangents(point: Vector2D, left: Vector2D, right: Vector2D)
 
 
 		/// Point
@@ -336,7 +336,7 @@ public struct Function {
 			switch self {
 			case let .point(point),
 				 let .tangent(point, _),
-				 let .angular(point, _, _):
+				 let .semiTangents(point, _, _):
 				return point
 			}
 		}
@@ -356,7 +356,7 @@ public struct Function {
             switch self {
             case .point: return .zero
             case let .tangent(_, tangent): return -tangent
-            case let .angular(_, tangent, _): return tangent
+            case let .semiTangents(_, tangent, _): return tangent
             }
         }
 
@@ -365,7 +365,7 @@ public struct Function {
             switch self {
             case .point: return .zero
             case let .tangent(_, tangent): return tangent
-            case let .angular(_, _, tangent): return tangent
+            case let .semiTangents(_, _, tangent): return tangent
             }
         }
 

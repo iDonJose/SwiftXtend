@@ -145,17 +145,17 @@ extension Function {
 										.tangent(point: .init(x: 0.248, y: -0.008), tangent: .init(x: 0.07, y: 0)),
 										.tangent(point: .init(x: 0.392, y: 0.02), tangent: .init(x: 0.058, y: 0)),
 										.tangent(point: .init(x: 0.544, y: -0.046), tangent: .init(x: 0.056, y: 0)),
-										.angular(point: .init(x: 0.692, y: 0.268), left: .init(x: -0.04, y: 0), right: .init(x: 0.08, y: 0)),
-										.angular(point: .init(x: 0.84, y: -0.36), left: .init(x: -0.046, y: 0), right: .init(x: 0.072, y: 0)),
-										.angular(point: .init(x: 0.992, y: 1.024), left: .init(x: -0.052, y: 0), right: .init(x: 0.007, y: 0)),
+										.semiTangents(point: .init(x: 0.692, y: 0.268), left: .init(x: -0.04, y: 0), right: .init(x: 0.08, y: 0)),
+										.semiTangents(point: .init(x: 0.84, y: -0.36), left: .init(x: -0.046, y: 0), right: .init(x: 0.072, y: 0)),
+										.semiTangents(point: .init(x: 0.992, y: 1.024), left: .init(x: -0.052, y: 0), right: .init(x: 0.007, y: 0)),
 										.point(.one)])!
 	}
 
 	public static var elasticOut: Function {
 		return Function(controlPoints: [.point(.zero),
-										.angular(point: .init(x: 0.008, y: -0.024), left: .init(x: -0.007, y: 0), right: .init(x: 0.052, y: 0)),
-										.angular(point: .init(x: 0.16, y: 1.36), left: .init(x: -0.072, y: 0), right: .init(x: 0.046, y: 0)),
-										.angular(point: .init(x: 0.308, y: 0.732), left: .init(x: -0.08, y: 0), right: .init(x: 0.04, y: 0)),
+										.semiTangents(point: .init(x: 0.008, y: -0.024), left: .init(x: -0.007, y: 0), right: .init(x: 0.052, y: 0)),
+										.semiTangents(point: .init(x: 0.16, y: 1.36), left: .init(x: -0.072, y: 0), right: .init(x: 0.046, y: 0)),
+										.semiTangents(point: .init(x: 0.308, y: 0.732), left: .init(x: -0.08, y: 0), right: .init(x: 0.04, y: 0)),
 										.tangent(point: .init(x: 0.456, y: 1.046), tangent: .init(x: 0.056, y: 0)),
 										.tangent(point: .init(x: 0.608, y: 0.98), tangent: .init(x: 0.058, y: 0)),
 										.tangent(point: .init(x: 0.752, y: 1.008), tangent: .init(x: 0.07, y: 0)),
