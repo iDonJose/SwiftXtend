@@ -13,7 +13,7 @@
 public struct Function {
 
 	/// Control points
-	public var controlPoints: [ControlPoint]
+	public let controlPoints: [ControlPoint]
 
 
 	// MARK: - Initialize
@@ -28,15 +28,9 @@ public struct Function {
 	// MARK: - Methods
 
     /// Sorts control points
-    public mutating func sort() {
-        controlPoints.sort { $0.x < $1.x }
-    }
-
-    /// Sorts control points
     public func sorted() -> Function {
-        var function = self
-        function.sort()
-        return function
+        let controlPoints = self.controlPoints.sorted { $0.x < $1.x }
+        return Function(controlPoints: controlPoints)!
     }
 
 
