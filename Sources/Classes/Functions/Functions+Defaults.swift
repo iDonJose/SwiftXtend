@@ -1,5 +1,5 @@
 //
-//  Functions+Easings.swift
+//  Functions+Defaults.swift
 //  SwiftXtend-iOS
 //
 //  Created by José Donor on 17/12/2018.
