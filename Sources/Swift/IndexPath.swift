@@ -8,6 +8,17 @@
 
 extension IndexPath {
 
+	/// IndexPath (row: 0, section: 0)
+	public static var zero: IndexPath {
+		return IndexPath(row: 0, section: 0)
+	}
+
+	/// IndexPath (row: 1, section: 1)
+	public static var one: IndexPath {
+		return IndexPath(row: 1, section: 1)
+	}
+
+
 	/// Increments row and section.
 	///
 	/// - Parameters:
