@@ -53,8 +53,8 @@ extension Int {
 			return String(value)
 		}
 
-		public var indexPath: IndexPath {
-			return IndexPath(row: value, section: 0)
+		public func indexPath(section: Int = 0) -> IndexPath {
+			return IndexPath(row: value, section: section)
 		}
 
         public var nsNumber: NSNumber {
@@ -106,8 +106,8 @@ extension Int {
 			return String(value)
 		}
 
-		public var indexPath: IndexPath {
-			return IndexPath(row: value, section: 0)
+		public func indexPath(section: Int = 0) -> IndexPath {
+			return IndexPath(row: value, section: section)
 		}
 
         public var nsNumber: NSNumber {
