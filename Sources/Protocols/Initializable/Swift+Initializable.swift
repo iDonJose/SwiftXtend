@@ -22,3 +22,5 @@ extension Dictionary: Initializable {}
 extension String: Initializable {}
 
 extension Date: Initializable {}
+
+extension IndexPath: Initializable {}
