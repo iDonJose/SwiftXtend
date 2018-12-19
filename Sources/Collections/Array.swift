@@ -34,9 +34,9 @@ extension Array {
 
 	}
 
-	/// Safely applies a block with a element at a given index if it exists
-	public func get(_ index: Int,
-					do block: (Element) -> Void) {
+	/// Safely gets an element if it exists, then applies a block
+	public func withElement(at index: Int,
+							do block: (Element) -> Void) {
 
 		if let element = get(index) { block(element) }
 
