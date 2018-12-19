@@ -13,4 +13,12 @@ extension Dictionary {
 		return !isEmpty
 	}
 
+	/// Safely gets a value if it exists, then applies a block
+	public func withValue(for key: Key,
+						  do block: (Value) -> Void) {
+
+		if let value = self[key] { block(value) }
+
+	}
+
 }
