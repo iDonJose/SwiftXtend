@@ -26,6 +26,7 @@
 		82A18AA221B9A84A00ED070D /* Function.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A18AA121B9A84A00ED070D /* Function.swift */; };
 		82A18AA421B9DB2200ED070D /* Vector2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A18AA321B9DB2200ED070D /* Vector2D.swift */; };
 		82A4F69821CA88FA00D6F6D5 /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A4F69721CA88FA00D6F6D5 /* Optional.swift */; };
+		82A4F69B21CAA64800D6F6D5 /* Swift+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A4F69A21CAA64800D6F6D5 /* Swift+Identifiable.swift */; };
 		82B180CD21AAD6F70096F7F0 /* Pair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B180CC21AAD6F70096F7F0 /* Pair.swift */; };
 		82B180CF21AAD9F00096F7F0 /* Geohash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B180CE21AAD9F00096F7F0 /* Geohash.swift */; };
 		82B180D221AAF14C0096F7F0 /* Geohash_Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B180D121AAF14C0096F7F0 /* Geohash_Spec.swift */; };
@@ -109,6 +110,7 @@
 		82A18AA121B9A84A00ED070D /* Function.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Function.swift; sourceTree = "<group>"; };
 		82A18AA321B9DB2200ED070D /* Vector2D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vector2D.swift; sourceTree = "<group>"; };
 		82A4F69721CA88FA00D6F6D5 /* Optional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Optional.swift; sourceTree = "<group>"; };
+		82A4F69A21CAA64800D6F6D5 /* Swift+Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Swift+Identifiable.swift"; sourceTree = "<group>"; };
 		82B180CC21AAD6F70096F7F0 /* Pair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pair.swift; sourceTree = "<group>"; };
 		82B180CE21AAD9F00096F7F0 /* Geohash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geohash.swift; sourceTree = "<group>"; };
 		82B180D121AAF14C0096F7F0 /* Geohash_Spec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geohash_Spec.swift; sourceTree = "<group>"; };
@@ -267,6 +269,15 @@
 			path = Functions;
 			sourceTree = "<group>";
 		};
+		82A4F69921CAA61900D6F6D5 /* Identifiable */ = {
+			isa = PBXGroup;
+			children = (
+				82F5196921A96627008A4DEC /* Identifiable.swift */,
+				82A4F69A21CAA64800D6F6D5 /* Swift+Identifiable.swift */,
+			);
+			path = Identifiable;
+			sourceTree = "<group>";
+		};
 		82B180CB21AAD6680096F7F0 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -359,7 +370,7 @@
 		82F5196821A96615008A4DEC /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				82F5196921A96627008A4DEC /* Identifiable.swift */,
+				82A4F69921CAA61900D6F6D5 /* Identifiable */,
 				82F5196B21A96823008A4DEC /* Initializable */,
 				82E645AB21A6CC2000F676E0 /* Randomizable */,
 			);
@@ -662,6 +673,7 @@
 				82F5198B21A9FD50008A4DEC /* DispatchQueue.swift in Sources */,
 				82A4F69821CA88FA00D6F6D5 /* Optional.swift in Sources */,
 				82A18AA221B9A84A00ED070D /* Function.swift in Sources */,
+				82A4F69B21CAA64800D6F6D5 /* Swift+Identifiable.swift in Sources */,
 				8230703E21A5FECE00551BE1 /* Similar.swift in Sources */,
 				8230704021A6006700551BE1 /* Swift+Similar.swift in Sources */,
 				82FA72FB21BEA19F00149F16 /* NSNumber+Conversion.swift in Sources */,
