@@ -9,8 +9,10 @@
 /// Provides an identifier
 public protocol Identifiable: Hashable, Similar {
 
+	associatedtype Identifier: Hashable
+
 	/// Identifier
-	var id: String { get set }
+	var id: Identifier { get set }
 
 }
 
@@ -21,9 +23,9 @@ extension Identifiable {
 		return id.hashValue
 	}
 
-	/// Determines if there is a valid identifier
-	public var isIdentified: Bool {
-		return id.isNotEmpty
-	}
+}
 
+
+public func ~~ <T: Identifiable>(lhs: T, rhs: T) -> Bool {
+	return lhs.id == rhs.id
 }
