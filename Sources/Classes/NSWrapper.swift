@@ -27,6 +27,15 @@ public final class NSWrapper<Value>: NSObject {
 		return NSWrapper(value)
 	}
 
+
+    public override var hash: Int {
+        return hashValue
+    }
+
+    public override var hashValue: Int {
+        return _hashValue
+    }
+
 }
 
 
@@ -44,4 +53,16 @@ extension NSWrapper where Value: Similar {
 		return lhs.value ~~ rhs.value
 	}
 
+}
+
+extension NSWrapper {
+    fileprivate var _hashValue: Int {
+        return super.hashValue
+    }
+}
+
+extension NSWrapper where Value: Hashable {
+    fileprivate var _hashValue: Int {
+        return value.hashValue
+    }
 }
