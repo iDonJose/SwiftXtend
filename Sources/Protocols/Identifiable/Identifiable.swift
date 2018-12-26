@@ -12,7 +12,7 @@ public protocol Identifiable: Hashable, Similar {
 	associatedtype Identifier: Hashable
 
 	/// Identifier
-	var id: Identifier { get }
+	var id: Identifier { get set }
 
 }
 
