@@ -14,8 +14,19 @@ public protocol Identifiable: Hashable, Similar {
 	/// Identifier
 	var id: Identifier { get set }
 
+    init(id: Identifier)
+
 }
 
+
+extension Identifiable where Self: Initializable {
+
+    public init(id: Identifier) {
+        self.init()
+        self.id = id
+    }
+
+}
 
 extension Identifiable {
 
