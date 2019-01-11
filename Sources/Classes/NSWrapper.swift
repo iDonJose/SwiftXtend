@@ -29,10 +29,6 @@ public final class NSWrapper<Value>: NSObject {
 
 
     public override var hash: Int {
-        return hashValue
-    }
-
-    public override var hashValue: Int {
         return _hashValue
     }
 
