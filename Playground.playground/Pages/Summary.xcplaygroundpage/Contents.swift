@@ -9,7 +9,7 @@
  ***
 
  # SwiftXtend
- Swift, extended.
+ A collection of classes, protocols and Swift extensions.
 
  ### Summary
 

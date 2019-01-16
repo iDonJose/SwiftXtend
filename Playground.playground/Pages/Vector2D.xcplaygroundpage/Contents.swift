@@ -44,12 +44,6 @@ let angleFromBisector = bisector.angle(to: vector)
 let tiltedVector = vector.rotating(by: .pi / 6)
 
 
-/*let view = View()
-view.frame.size = .init(width: 400, height: 400)
-view.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
-view*/
-
-
 
 extension Vector2D: CustomPlaygroundDisplayConvertible {
     public var playgroundDescription: Any {
