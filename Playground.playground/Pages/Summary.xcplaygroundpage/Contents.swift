@@ -22,6 +22,7 @@
  - [Geohash](Geohash) : Helper for converting from geolocation to geohash and vice-versa
  - [Hash](Hash) : Helper for generating hash values
  - [NSWrapper](NSWrapper) : An NSObject as wrapper
+ - [OrderedDictionary](OrderedDictionary) : A Dictionary where keys are ordered
  - [Pair](Pair) : A pair of two objects
  - [Ticker](Ticker) : A timer
  - [Vector2D](Vector2D) : A 2D vector representation

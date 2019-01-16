@@ -8,6 +8,7 @@
         <page name='Geohash'/>
         <page name='Hash'/>
         <page name='NSWrapper'/>
+        <page name='OrderedDictionary'/>
         <page name='Pair'/>
         <page name='Ticker'/>
         <page name='Vector2D'/>
