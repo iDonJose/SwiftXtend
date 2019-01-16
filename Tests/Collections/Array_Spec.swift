@@ -59,14 +59,14 @@ class Array_Spec: QuickSpec {
 
 			}
 
-			describe("`get(_:do:)`") {
+			describe("`get(_:then:)`") {
 
 				context("index is valid") {
 					it("executes block") {
 
 						var didExecuteBlock = false
 
-						array.get(array.count - 1, do: { element in
+						array.get(array.count - 1, then: { element in
 							didExecuteBlock = element == array.count - 1
 						})
 
@@ -84,10 +84,10 @@ class Array_Spec: QuickSpec {
 							didExecuteBlock = element == array.count - 1
 						}
 
-						array.get(-1, do: block)
+						array.get(-1, then: block)
 						expect(didExecuteBlock).to(beFalse())
 
-						array.get(array.count, do: block)
+						array.get(array.count, then: block)
 						expect(didExecuteBlock).to(beFalse())
 
 					}
