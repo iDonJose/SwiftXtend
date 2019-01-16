@@ -14,8 +14,8 @@ extension Dictionary {
 	}
 
 	/// Safely gets a value if it exists, then applies a block
-	public func get(_ key: Key,
-					then block: (Value) -> Void) {
+	public func getValue(for key: Key,
+						 then block: (Value) -> Void) {
 
 		if let value = self[key] { block(value) }
 
