@@ -5,7 +5,7 @@
 //  Created by José Donor on 19/12/2018.
 //
 
-/*
+
 extension Bool: Identifiable {
 
 	public typealias Identifier = Bool
@@ -52,7 +52,7 @@ extension Int: Identifiable {
 }
 
 extension Float: Identifiable {
-    
+
 	public typealias Identifier = Float
 
     public var id: Identifier {
@@ -136,6 +136,5 @@ extension IndexPath: Identifiable {
     public init(id: Identifier) {
         self = id
     }
-    
+
 }
-*/
