@@ -6,7 +6,7 @@
 //
 
 
-public struct Vector2D: Initializable, Hashable, Codable {
+public struct Vector2D: Initializable, Hashable, Codable, CustomStringConvertible {
 
 	/// X value
 	public var x: Double
@@ -71,5 +71,11 @@ public struct Vector2D: Initializable, Hashable, Codable {
         return Vector2D(x: x * cos - y * sin,
                         y: x * sin + y * cos)
     }
+
+
+	/// Description
+	public var description: String {
+		return "(x: \(x), y: \(y))"
+	}
 
 }
