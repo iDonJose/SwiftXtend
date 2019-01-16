@@ -5,6 +5,7 @@
 
 import SwiftXtend
 
+
 let value = [1, 2, 3]
 
 let wrapped = NSWrapper(value)

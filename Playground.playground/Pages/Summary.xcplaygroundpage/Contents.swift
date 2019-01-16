@@ -23,6 +23,7 @@
  - [NSWrapper](NSWrapper) : An NSObject as wrapper
  - [Pair](Pair) : A pair of two objects
  - [Ticker](Ticker) : A timer
+ - [Vector2D](Vector2D) : A 2D vector representation
 
  **Conversions**
  - [Conversions](Conversions) : Convert from a type to another
