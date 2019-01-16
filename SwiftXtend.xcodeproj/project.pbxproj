@@ -15,6 +15,11 @@
 		8230704721A612CA00551BE1 /* Set.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8230704621A612CA00551BE1 /* Set.swift */; };
 		8230704921A612E700551BE1 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8230704821A612E700551BE1 /* Dictionary.swift */; };
 		8230706821A62CF500551BE1 /* SwiftXtend.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FR_89FD787D53AB9B3BD829E821B8C1438E /* SwiftXtend.framework */; };
+		82521E2521EF297500E62648 /* CGVector+Conversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82521E2421EF297500E62648 /* CGVector+Conversion.swift */; };
+		82521E2721EF2A0700E62648 /* Vector2D+Conversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82521E2621EF2A0700E62648 /* Vector2D+Conversion.swift */; };
+		82521E2921EF2A9A00E62648 /* Class+Similar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82521E2821EF2A9A00E62648 /* Class+Similar.swift */; };
+		82521E2B21EF2AC700E62648 /* Class+Interpolable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82521E2A21EF2AC700E62648 /* Class+Interpolable.swift */; };
+		82521E2E21EF2B6E00E62648 /* Vector2D+Algebra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82521E2D21EF2B6E00E62648 /* Vector2D+Algebra.swift */; };
 		825C1E2821AC3CE90080D384 /* CG+Interpolable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825C1E2721AC3CE90080D384 /* CG+Interpolable.swift */; };
 		825C1E2A21AC3F930080D384 /* UIKit+Interpolable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825C1E2921AC3F930080D384 /* UIKit+Interpolable.swift */; };
 		825C1E2C21AC436F0080D384 /* CG+Similar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825C1E2B21AC436F0080D384 /* CG+Similar.swift */; };
@@ -99,6 +104,11 @@
 		8230704821A612E700551BE1 /* Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
 		8230706321A62CF500551BE1 /* SwiftXtend-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftXtend-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8230706721A62CF500551BE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82521E2421EF297500E62648 /* CGVector+Conversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGVector+Conversion.swift"; sourceTree = "<group>"; };
+		82521E2621EF2A0700E62648 /* Vector2D+Conversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Vector2D+Conversion.swift"; sourceTree = "<group>"; };
+		82521E2821EF2A9A00E62648 /* Class+Similar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Class+Similar.swift"; sourceTree = "<group>"; };
+		82521E2A21EF2AC700E62648 /* Class+Interpolable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Class+Interpolable.swift"; sourceTree = "<group>"; };
+		82521E2D21EF2B6E00E62648 /* Vector2D+Algebra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Vector2D+Algebra.swift"; sourceTree = "<group>"; };
 		825C1E2721AC3CE90080D384 /* CG+Interpolable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CG+Interpolable.swift"; sourceTree = "<group>"; };
 		825C1E2921AC3F930080D384 /* UIKit+Interpolable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit+Interpolable.swift"; sourceTree = "<group>"; };
 		825C1E2B21AC436F0080D384 /* CG+Similar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CG+Similar.swift"; sourceTree = "<group>"; };
@@ -229,6 +239,7 @@
 		8230703C21A5FEB800551BE1 /* Operators */ = {
 			isa = PBXGroup;
 			children = (
+				82521E2C21EF2B5800E62648 /* Algebra */,
 				82F5195F21A8926E008A4DEC /* Interpolable */,
 				82E645AA21A6C42300F676E0 /* Similar */,
 			);
@@ -256,6 +267,14 @@
 				82E645A721A6302100F676E0 /* Operators */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		82521E2C21EF2B5800E62648 /* Algebra */ = {
+			isa = PBXGroup;
+			children = (
+				82521E2D21EF2B6E00E62648 /* Vector2D+Algebra.swift */,
+			);
+			path = Algebra;
 			sourceTree = "<group>";
 		};
 		82891BFD21C71CEC0003511D /* Functions */ = {
@@ -317,6 +336,7 @@
 				8230703F21A6006700551BE1 /* Swift+Similar.swift */,
 				825C1E2B21AC436F0080D384 /* CG+Similar.swift */,
 				825C1E3121AC43DE0080D384 /* UIKit+Similar.swift */,
+				82521E2821EF2A9A00E62648 /* Class+Similar.swift */,
 			);
 			path = Similar;
 			sourceTree = "<group>";
@@ -363,6 +383,7 @@
 				82F5196221A91E29008A4DEC /* Swift+Interpolable.swift */,
 				825C1E2721AC3CE90080D384 /* CG+Interpolable.swift */,
 				825C1E2921AC3F930080D384 /* UIKit+Interpolable.swift */,
+				82521E2A21EF2AC700E62648 /* Class+Interpolable.swift */,
 			);
 			path = Interpolable;
 			sourceTree = "<group>";
@@ -404,6 +425,8 @@
 				82F5198621A9F2B2008A4DEC /* Double+Conversion.swift */,
 				82F5198821A9F2E3008A4DEC /* Decimal+Conversion.swift */,
 				82FA72FA21BEA19F00149F16 /* NSNumber+Conversion.swift */,
+				82521E2421EF297500E62648 /* CGVector+Conversion.swift */,
+				82521E2621EF2A0700E62648 /* Vector2D+Conversion.swift */,
 			);
 			path = Conversions;
 			sourceTree = "<group>";
@@ -665,6 +688,7 @@
 				827BE41E21C82340001C8683 /* Function+Mutations.swift in Sources */,
 				82E645BB21A6E60A00F676E0 /* Range+Randomizable.swift in Sources */,
 				82E645C121A754B000F676E0 /* UInt.swift in Sources */,
+				82521E2B21EF2AC700E62648 /* Class+Interpolable.swift in Sources */,
 				82F5198521A9F27F008A4DEC /* Float+Conversion.swift in Sources */,
 				82E645C721A7550C00F676E0 /* Decimal.swift in Sources */,
 				82F5199321AA0F31008A4DEC /* Global.swift in Sources */,
@@ -676,10 +700,13 @@
 				82A4F69B21CAA64800D6F6D5 /* Swift+Identifiable.swift in Sources */,
 				8230703E21A5FECE00551BE1 /* Similar.swift in Sources */,
 				8230704021A6006700551BE1 /* Swift+Similar.swift in Sources */,
+				82521E2521EF297500E62648 /* CGVector+Conversion.swift in Sources */,
 				82FA72FB21BEA19F00149F16 /* NSNumber+Conversion.swift in Sources */,
 				82B180CF21AAD9F00096F7F0 /* Geohash.swift in Sources */,
 				827BE41C21C7E45D001C8683 /* Function+Transformations.swift in Sources */,
+				82521E2721EF2A0700E62648 /* Vector2D+Conversion.swift in Sources */,
 				82F5197A21A9E3B5008A4DEC /* Calendar.swift in Sources */,
+				82521E2921EF2A9A00E62648 /* Class+Similar.swift in Sources */,
 				82E645B121A6CDA100F676E0 /* Collection+Randomizable.swift in Sources */,
 				822CE32521BDCEC8003503BB /* NumberFormatter.swift in Sources */,
 				82891BFF21C71D150003511D /* Functions+Defaults.swift in Sources */,
@@ -706,6 +733,7 @@
 				82E645BF21A752BE00F676E0 /* Int.swift in Sources */,
 				82E645AD21A6CC7000F676E0 /* Randomizable.swift in Sources */,
 				82E645C521A754EF00F676E0 /* Double.swift in Sources */,
+				82521E2E21EF2B6E00E62648 /* Vector2D+Algebra.swift in Sources */,
 				82F5196521A920B7008A4DEC /* Date.swift in Sources */,
 				82F5196121A89290008A4DEC /* Interpolable.swift in Sources */,
 				82F5198721A9F2B2008A4DEC /* Double+Conversion.swift in Sources */,
