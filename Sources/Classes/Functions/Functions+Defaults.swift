@@ -108,9 +108,9 @@ extension Function {
 
 	public static var easeInOutExpo: Function {
 		return Function(controlPoints: [.tangent(point: .zero,
-												 tangent: .init(x: 1, y: 0)),
+												 tangent: .init(x: 0.95, y: 0.005)),
 										.tangent(point: .one,
-												 tangent: .init(x: 1, y: 0))])!
+												 tangent: .init(x: 0.88, y: 0))])!
 	}
 
 
@@ -182,11 +182,11 @@ extension Function {
 
 	public static var bounceIn: Function {
 		return Function(controlPoints: [.point(.zero),
-										.tangent(point: .init(x: 0.048, y: 0.004), tangent: .init(x: 0.022, y: 0)),
+										.tangent(point: .init(x: 0.048, y: 0.02), tangent: .init(x: 0.04, y: 0)),
 										.point(.init(x: 0.09, y: 0)),
 										.tangent(point: .init(x: 0.176, y: 0.064), tangent: .init(x: 0.05, y: 0)),
 										.point(.init(x: 0.272, y: 0)),
-										.tangent(point: .init(x: 0.454, y: 0.252), tangent: .init(x: 0.05, y: 0)),
+										.tangent(point: .init(x: 0.454, y: 0.252), tangent: .init(x: 0.12, y: 0)),
 										.point(.init(x: 0.638, y: 0)),
 										.tangent(point: .one, tangent: .init(x: 0.196, y: 0))])!
 	}
@@ -194,11 +194,11 @@ extension Function {
 	public static var bounceOut: Function {
 		return Function(controlPoints: [.tangent(point: .zero, tangent: .init(x: 0.196, y: 0)),
 										.point(.init(x: 0.362, y: 1)),
-										.tangent(point: .init(x: 0.546, y: 0.748), tangent: .init(x: 0.05, y: 0)),
+										.tangent(point: .init(x: 0.546, y: 0.748), tangent: .init(x: 0.12, y: 0)),
 										.point(.init(x: 0.728, y: 1)),
 										.tangent(point: .init(x: 0.824, y: 0.936), tangent: .init(x: 0.05, y: 0)),
-										.point(.init(x: 0.81, y: 1)),
-										.tangent(point: .init(x: 0.952, y: 0.996), tangent: .init(x: 0.022, y: 0)),
+										.point(.init(x: 0.91, y: 1)),
+										.tangent(point: .init(x: 0.952, y: 0.98), tangent: .init(x: 0.04, y: 0)),
 										.point(.one)])!
 	}
 
@@ -209,7 +209,7 @@ extension Function {
 										.tangent(point: .init(x: 0.088, y: 0.034), tangent: .init(x: 0.024, y: 0)),
 										.point(.init(x: 0.136, y: 0)),
 										.tangent(point: .init(x: 0.23, y: 0.128), tangent: .init(x: 0.048, y: 0)),
-										.point(.init(x: 0.316, y: 0)),
+										.semiTangents(point: .init(x: 0.316, y: 0), left: .zero, right: .init(x: 0.1, y: 0.5)),
 										.point(.init(x: 0.684, y: 1)),
 										.tangent(point: .init(x: 0.77, y: 0.872), tangent: .init(x: 0.048, y: 0)),
 										.point(.init(x: 0.864, y: 1)),

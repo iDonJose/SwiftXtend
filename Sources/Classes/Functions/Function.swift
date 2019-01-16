@@ -8,6 +8,7 @@
 // Source : https://github.com/agens-no/AGGeometryKit/blob/master/AGGeometryKit/AGKMath.m
 
 
+/// Math function defined by control points
 public struct Function {
 
 	/// Control points
@@ -17,7 +18,9 @@ public struct Function {
 	// MARK: - Initialize
 
 	public init?(controlPoints: [ControlPoint]) {
-		self.controlPoints = controlPoints.uniquing { $0.x == $1.x }
+		self.controlPoints = controlPoints
+			.uniquing { $0.x == $1.x }
+			.sorted { $0.x < $1.x }
         if controlPoints.count < 2 { return nil }
 	}
 
@@ -27,8 +30,6 @@ public struct Function {
 
 	public func f(_ x: Double) -> Double {
 
-		guard controlPoints.isNotEmpty else { return 0 }
-
 		guard x > controlPoints.first!.x else { return controlPoints.first!.y }
 		guard x < controlPoints.last!.x else { return controlPoints.last!.y }
 
@@ -37,9 +38,9 @@ public struct Function {
 		var b = controlPoints.count - 1
 
 		while b - a > 1 {
-			let m = (controlPoints[a].x + controlPoints[b].x) / 2
-			if x > m { a = (a + b) / 2 }
-			else { b = (a + b) / 2 }
+			let m = (a + b) / 2
+			if x < controlPoints[m].x { b = m }
+			else { a = m }
 		}
 
 		let cpA = controlPoints[a]
@@ -47,7 +48,6 @@ public struct Function {
 
 
 		if case let (.point(A), .point(B)) = (cpA, cpB) {
-
 			let t = (x - A.x) / (B.x - A.x)
 			return A.y + (B.y - A.y) * t
 		}
@@ -64,10 +64,13 @@ public struct Function {
 		return y
 	}
 
+	/// Definition domain
+	public var domain: ClosedRange<Double> {
+		return controlPoints.first!.x...controlPoints.last!.x
+	}
+
     /// Maximum points on curve
     public func maxima() -> [Vector2D] {
-
-        guard controlPoints.isNotEmpty else { return [] }
 
         return zip(controlPoints.dropLast(), controlPoints.dropFirst())
             .map { cpA, cpB -> Vector2D in
@@ -108,8 +111,6 @@ public struct Function {
 
     /// Minimum points on curve
     public func minima() -> [Vector2D] {
-
-        guard controlPoints.isNotEmpty else { return [] }
 
         return zip(controlPoints.dropLast(), controlPoints.dropFirst())
             .map { cpA, cpB -> Vector2D in
@@ -195,7 +196,7 @@ public struct Function {
 		let C = 3 * cp2.x - 3 * cp1.x
 		let D = cp1.x
 
-		var t = x
+		var t = 0.5
 
 		for _ in (0..<5) {
 

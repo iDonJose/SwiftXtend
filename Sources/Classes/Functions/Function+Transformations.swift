@@ -8,7 +8,7 @@
 
 extension Function {
 
-	/// Generates a new Function that is the central symetric of this one
+	/// Creates a function that is the central symetric
 	public func centralSymetric(through center: Vector2D) -> Function {
 
 		func transform(point: Vector2D) -> Vector2D {
@@ -39,16 +39,15 @@ extension Function {
 		return Function(controlPoints: newControlPoints)!
 	}
 
-	/// Generates a new Function that is the vertical axial symetric of this one
-	public func verticalSymetric(through x: Double) -> Function {
+	/// Creates a function that is the vertical symetric
+	public func verticalSymetric(x: Double) -> Function {
 
 		let x_min = controlPoints.first!.point.x
 		let x_max = controlPoints.last!.point.x
-		let x_mid = (x_max + x_min) / 2
 
 
 		func transform(point: Vector2D) -> Vector2D {
-			return .init(x: 2 * x_mid - point.x,
+			return .init(x: 2 * x - point.x,
 						 y: point.y)
 		}
 
@@ -85,17 +84,16 @@ extension Function {
 		return Function(controlPoints: newControlPoints)!
 	}
 
-	/// Generates a new Function that is the horizontal axial symetric of this one
-	public func horizontalSymetric(through y: Double) -> Function {
+	/// Creates a function that is the horizontal symetric
+	public func horizontalSymetric(y: Double) -> Function {
 
 		let y_min = controlPoints.first!.point.y
 		let y_max = controlPoints.last!.point.y
-		let y_mid = (y_max + y_min) / 2
 
 
 		func transform(point: Vector2D) -> Vector2D {
 			return .init(x: point.x,
-						 y: 2 * y_mid - point.y)
+						 y: 2 * y - point.y)
 		}
 
 		func transform(tangent: Vector2D) -> Vector2D {
@@ -123,8 +121,8 @@ extension Function {
 
 				case let .semiTangents(point, left, right):
 					return .semiTangents(point: transform(point: point),
-										 left: transform(semiTangent: right),
-										 right: transform(semiTangent: left))
+										 left: transform(semiTangent: left),
+										 right: transform(semiTangent: right))
 				}
 			}
 
