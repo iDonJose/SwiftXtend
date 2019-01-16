@@ -44,13 +44,27 @@ let angleFromBisector = bisector.angle(to: vector)
 let tiltedVector = vector.rotating(by: .pi / 6)
 
 
-let view = View()
+/*let view = View()
 view.frame.size = .init(width: 400, height: 400)
 view.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
-view
+view*/
 
+
+
+extension Vector2D: CustomPlaygroundDisplayConvertible {
+    public var playgroundDescription: Any {
+        let view = View()
+        view.frame.size = .init(width: 400, height: 400)
+        view.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        view.vector = self
+        return view
+    }
+}
 
 class View: UIView {
+
+    var vector: Vector2D = .zero
+
     override func draw(_ bounds: CGRect) {
         super.draw(bounds)
 
@@ -84,18 +98,11 @@ class View: UIView {
         context.addLine(to: (vector * vectorScale).to.cgPoint)
         context.strokePath()
 
-        // Normed Vector
-        context.setStrokeColor(#colorLiteral(red: 0.8879394531, green: 0.1695449912, blue: 0.06915461067, alpha: 1))
-        context.setLineWidth(4)
-        context.move(to: .zero)
-        context.addLine(to: (normedVector * vectorScale).to.cgPoint)
-        context.strokePath()
-
-        // Tilted Vector
-        context.setStrokeColor(#colorLiteral(red: 0.3670095132, green: 0.8879394531, blue: 0.2946803311, alpha: 1))
-        context.setLineWidth(2)
-        context.move(to: .zero)
-        context.addLine(to: (tiltedVector * vectorScale).to.cgPoint)
+        // Vector's end
+        context.setLineWidth(8)
+        context.setLineCap(.round)
+        context.move(to: (vector * vectorScale).to.cgPoint)
+        context.addLine(to: (vector * vectorScale).to.cgPoint)
         context.strokePath()
 
     }
