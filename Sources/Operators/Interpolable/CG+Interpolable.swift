@@ -27,6 +27,26 @@ extension CGFloat: Interpolable {
 }
 
 
+// MARK: CGPoint
+
+extension CGPoint: Interpolable {
+
+	public typealias Progress = CGFloat
+
+	public static func .. (p: CGFloat, max: CGPoint) -> (CGPoint) -> CGPoint {
+		return { min in
+			return CGPoint(x: min.x + (max.x - min.x) * p,
+						   y: min.y + (max.y - min.y) * p)
+		}
+	}
+
+	public static func .. (min: CGPoint, rhs: (CGPoint) -> CGPoint) -> CGPoint {
+		return rhs(min)
+	}
+
+}
+
+
 // MARK: CGVector
 
 extension CGVector: Interpolable {
