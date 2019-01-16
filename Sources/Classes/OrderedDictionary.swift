@@ -8,7 +8,7 @@
 // swiftlint:disable empty_count
 
 
-
+/// A Dictionary where keys are ordered
 public struct OrderedDictionary<Key: Hashable, Value>: ExpressibleByDictionaryLiteral, Sequence, CustomStringConvertible {
 
 	// MARK: - Properties
@@ -61,11 +61,12 @@ public struct OrderedDictionary<Key: Hashable, Value>: ExpressibleByDictionaryLi
 		dictionary = [:]
 		keys = []
 
-		elements.lazy
-			.reversed()
+		elements
 			.forEach { key, value in
-				let oldValue = dictionary.updateValue(value, forKey: key)
-				if oldValue == nil { keys.append(key) }
+				if dictionary[key] == nil {
+					dictionary[key] = value
+					keys.append(key)
+				}
 			}
 
 	}
@@ -81,6 +82,15 @@ public struct OrderedDictionary<Key: Hashable, Value>: ExpressibleByDictionaryLi
 			if oldValue == nil && newValue != nil { keys.append(key) }
 		}
 	}
+
+	public subscript(index: Int) ->(key: Key, value: Value)? {
+		get { return get(index) }
+		set {
+			if let value = newValue { set(value, at: index) }
+			else { remove(at: index) }
+		}
+	}
+
 
 
 	// MARK: - Sequence
@@ -103,6 +113,75 @@ public struct OrderedDictionary<Key: Hashable, Value>: ExpressibleByDictionaryLi
 
 
 	// MARK: - Methods
+
+	/// Gets key-value pair at a given index
+	public func get(_ index: Int) -> (key: Key, value: Value)? {
+
+		guard index < count else { return nil }
+
+		let key = keys[index]
+		let value = dictionary[key]!
+		return (key, value)
+	}
+
+	/// Sets a key-value pair to a given index
+	@discardableResult
+	public mutating func set(_ pair: (key: Key, value: Value),
+							 at index: Int) -> Value? {
+
+		guard index < count else { return nil }
+
+		let key = keys[index]
+		let value = pair.value
+
+		let oldValue = dictionary.removeValue(forKey: key)
+		if oldValue != nil { keys.removeFirst(key) }
+		dictionary[key] = value
+		keys.insert(key, at: index)
+
+		return oldValue
+	}
+
+	/// Inserts a key-value pair
+	public mutating func insert(_ pair: (key: Key, value: Value),
+								at index: Int) {
+
+		let key = pair.key
+		let value = pair.value
+
+		let oldValue = dictionary.removeValue(forKey: key)
+		if oldValue != nil { keys.removeFirst(key) }
+		dictionary[key] = value
+		keys.insert(key, at: index)
+
+	}
+
+	/// Appends a key-value pair
+	public mutating func append(_ pair: (key: Key, value: Value)) {
+
+		let key = pair.key
+		let value = pair.value
+
+		let oldValue = dictionary.removeValue(forKey: key)
+		if oldValue != nil { keys.removeFirst(key) }
+		dictionary[key] = value
+		keys.append(key)
+
+	}
+
+	/// Removes key-value pair at a given index
+	@discardableResult
+	public mutating func remove(at index: Int) -> Value? {
+
+		guard index < count else { return nil }
+
+		let key = keys[index]
+
+		let oldValue = dictionary.removeValue(forKey: key)
+		if oldValue != nil { keys.removeFirst(key) }
+
+		return oldValue
+	}
 
 	/// Removes all key-values
 	public mutating func removeAll() {
