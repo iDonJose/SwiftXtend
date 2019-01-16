@@ -29,6 +29,10 @@ extension Vector2D {
 		}
 
 
+		public var cgPoint: CGPoint {
+			return CGPoint(x: value.x, y: value.y)
+		}
+
 		public var cgVector: CGVector {
 			return CGVector(dx: value.x, dy: value.y)
 		}

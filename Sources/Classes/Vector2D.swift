@@ -44,7 +44,7 @@ public struct Vector2D: Initializable, Hashable, Codable {
         return sqrt(pow(x, 2) + pow(y, 2))
     }
 
-    /// Normed point
+    /// Normed vector
     public func normed() -> Vector2D {
         let norm = self.norm
         return Vector2D(x: x / norm,
@@ -52,7 +52,7 @@ public struct Vector2D: Initializable, Hashable, Codable {
     }
 
 
-    /// Calculates angle from vector to another.
+    /// Calculates angle from one vector to another.
     /// Result angle is in [0, 2pi] radians
     public func angle(to vector: Vector2D) -> Double {
 

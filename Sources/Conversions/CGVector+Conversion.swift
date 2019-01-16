@@ -12,28 +12,9 @@ import UIKit
 
 extension CGVector {
 
-	public var to: Converter {
-		return Converter(self)
-	}
-
-}
-
-extension CGVector {
-
-	public struct Converter {
-
-		private let value: CGVector
-
-		fileprivate init (_ value: CGVector) {
-			self.value = value
-		}
-
-
-		public var vector2D: Vector2D {
-			return Vector2D(x: Double(value.dx),
-							y: Double(value.dy))
-		}
-
+	public var vector2D: Vector2D {
+		return Vector2D(x: Double(dx),
+						y: Double(dy))
 	}
 
 }
