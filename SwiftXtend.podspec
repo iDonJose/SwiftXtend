@@ -5,10 +5,11 @@
 Pod::Spec.new do |s|
 
     s.name         = "SwiftXtend"
-    s.version      = "1.0.0"
-    s.summary      = "Swift, extended"
+    s.version      = "1.1.0"
+    s.summary      = "A collection of classes, protocols and Swift extensions"
     s.description  = <<-DESC
-                        `SwiftXtend` adds a set of handy classes and extends Swift.
+                        `SwiftXtend` offers some new fancy classes, new handy protocols and extends Swift types.
+						It allows you to boost your productivity while using Swift.
                         DESC
     s.homepage     = "https://github.com/iDonJose/SwiftXtend"
     s.source       = { :git => "https://github.com/iDonJose/SwiftXtend.git", :tag => "#{s.version}" }
