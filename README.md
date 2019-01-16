@@ -1,6 +1,7 @@
 # SwiftXtend
 
-> `SwiftXtend` adds a set of handy classes and extends Swift.
+`SwiftXtend` offers some new fancy classes, new handy protocols and extends Swift types.
+It allows you to boost your productivity while using Swift.
 <p align="center">
 	<a href="https://swift.org">
         <img src="https://img.shields.io/badge/Swift-4.2-orange.svg" />
@@ -66,6 +67,8 @@ To add *SwiftXtend* to your project manually, download the source code and place
 
 ## 👏 Greetings
 *SwiftXtend* was made possible thanks to :
+- [AGGeometryKit](https://github.com/agens-no/AGGeometryKit/blob/master/AGGeometryKit/AGKMath.m)
+- [Easings](https://easings.net)
 - [latlon-geohash](https://github.com/chrisveness/latlon-geohash)
 - [RandomKit](https://github.com/nvzqz/RandomKit)
 - [SwiftTimer](https://github.com/100mango/SwiftTimer)
