@@ -56,11 +56,17 @@ public struct Vector2D: Initializable, Hashable, Codable, CustomStringConvertibl
     /// Result angle is in [0, 2pi] radians
     public func angle(to vector: Vector2D) -> Double {
 
-        var angle = atan2(y, x) - atan2(vector.y, vector.x)
+        var angle = atan2(vector.y, vector.x) - atan2(y, x)
         if angle < 0 { angle += 2 * .pi }
 
         return angle
     }
+
+	/// Calculates angle from one vector to another.
+	/// Result angle is in [0, 2pi] radians
+	public func angle(from vector: Vector2D) -> Double {
+		return 2 * .pi - vector.angle(to: self)
+	}
 
     /// Rotates vector by a given angle (radians)
     public func rotating(by angle: Double) -> Vector2D {

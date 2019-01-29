@@ -12,7 +12,7 @@ import UIKit
  > See also `init()`, `zero`, `one`
  */
 
-let vector = Vector2D(x: 3, y: -8)
+let vector = Vector2D(x: 3, y: 1)
 
 /*:
  ### `norm`
@@ -31,6 +31,7 @@ let normedVector = vector.normed()
 /*:
  ### `angle(to:)`
  Calculates angle from one vector to another
+ > See `angle(from:)`
  */
 
 let bisector = Vector2D.one
