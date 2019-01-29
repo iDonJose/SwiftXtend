@@ -69,7 +69,7 @@ public struct Vector2D: Initializable, Hashable, Codable, CustomStringConvertibl
 	}
 
     /// Rotates vector by a given angle (radians)
-    public func rotating(by angle: Double) -> Vector2D {
+    public func rotated(by angle: Double) -> Vector2D {
 
         let cos = Foundation.cos(angle)
         let sin = Foundation.sin(angle)

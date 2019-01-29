@@ -38,11 +38,11 @@ let bisector = Vector2D.one
 let angleFromBisector = bisector.angle(to: vector)
 
 /*:
- ### `rotating(by:)`
+ ### `rotated(by:)`
  Rotates vector by a given angle
  */
 
-let tiltedVector = vector.rotating(by: .pi / 6)
+let tiltedVector = vector.rotated(by: .pi / 6)
 
 
 
