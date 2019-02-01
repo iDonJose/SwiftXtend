@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8205539C2204D8E600E3B867 /* Dictionary+Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8205539B2204D8E600E3B867 /* Dictionary+Equatable.swift */; };
 		822CE32521BDCEC8003503BB /* NumberFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822CE32421BDCEC8003503BB /* NumberFormatter.swift */; };
 		8230703E21A5FECE00551BE1 /* Similar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8230703D21A5FECE00551BE1 /* Similar.swift */; };
 		8230704021A6006700551BE1 /* Swift+Similar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8230703F21A6006700551BE1 /* Swift+Similar.swift */; };
@@ -94,6 +95,7 @@
 		3ABCF013B323D3945EC4EFA8 /* Pods-SwiftXtend-Tests-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftXtend-Tests-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftXtend-Tests-iOS/Pods-SwiftXtend-Tests-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		3F46559B6B58C4F33927344B /* Pods_SwiftXtend_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftXtend_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		66A8DDB16546E4F8584FDF3B /* Pods-SwiftXtend-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftXtend-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftXtend-iOS/Pods-SwiftXtend-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		8205539B2204D8E600E3B867 /* Dictionary+Equatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Equatable.swift"; sourceTree = "<group>"; };
 		822CE32421BDCEC8003503BB /* NumberFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFormatter.swift; sourceTree = "<group>"; };
 		8230703D21A5FECE00551BE1 /* Similar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Similar.swift; sourceTree = "<group>"; };
 		8230703F21A6006700551BE1 /* Swift+Similar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Swift+Similar.swift"; sourceTree = "<group>"; };
@@ -218,6 +220,14 @@
 				3F46559B6B58C4F33927344B /* Pods_SwiftXtend_iOS.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8205539A2204D8A600E3B867 /* Equatable */ = {
+			isa = PBXGroup;
+			children = (
+				8205539B2204D8E600E3B867 /* Dictionary+Equatable.swift */,
+			);
+			path = Equatable;
 			sourceTree = "<group>";
 		};
 		8230703B21A5E0A200551BE1 /* Meta */ = {
@@ -388,6 +398,7 @@
 		82F5196821A96615008A4DEC /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				8205539A2204D8A600E3B867 /* Equatable */,
 				82A4F69921CAA61900D6F6D5 /* Identifiable */,
 				82F5196B21A96823008A4DEC /* Initializable */,
 				82E645AB21A6CC2000F676E0 /* Randomizable */,
@@ -736,6 +747,7 @@
 				82F5198D21A9FF41008A4DEC /* IndexPath.swift in Sources */,
 				825C1E3221AC43DE0080D384 /* UIKit+Similar.swift in Sources */,
 				82E645BD21A6ECA900F676E0 /* Range.swift in Sources */,
+				8205539C2204D8E600E3B867 /* Dictionary+Equatable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
