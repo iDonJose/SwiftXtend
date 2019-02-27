@@ -8,17 +8,6 @@
 
 extension Bool {
 
-	/// Swap with a new boolean value
-	///
-	/// - Parameter bool: New boolean value
-	/// - Returns: Previous value
-	@discardableResult
-	public mutating func swap(_ newValue: Bool) -> Bool {
-		let oldValue = self
-		if self != newValue { self = newValue }
-		return oldValue
-	}
-
 	/// Toggles value
 	public func toggled() -> Bool {
 		return !self
