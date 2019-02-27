@@ -1,11 +1,11 @@
-#  Validate Podspec by running 'pod spec lint <Framework>.podspec'
+#  Validate Podspec by running 'pod spec lint SwigftXtend.podspec'
 #  Podspec attributes : http://docs.cocoapods.org/specification.html
 #  Podspecs examples : https://github.com/CocoaPods/Specs/
 
 Pod::Spec.new do |s|
 
     s.name         = "SwiftXtend"
-    s.version      = "1.1.0"
+    s.version      = "1.2.0"
     s.summary      = "A collection of classes, protocols and Swift extensions"
     s.description  = <<-DESC
                         `SwiftXtend` offers some new fancy classes, new handy protocols and extends Swift types.

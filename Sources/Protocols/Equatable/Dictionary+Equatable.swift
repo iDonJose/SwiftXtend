@@ -33,4 +33,3 @@ public func == <Key: Hashable, Value>(lhs: [Key: Value]?, rhs: [Key: Value]?) ->
 public func != <Key: Hashable, Value>(lhs: [Key: Value]?, rhs: [Key: Value]?) -> Bool {
 	return !(lhs == rhs)
 }
-
