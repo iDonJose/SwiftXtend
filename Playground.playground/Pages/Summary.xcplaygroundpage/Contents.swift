@@ -51,5 +51,6 @@
  **Operators**
  - [`<from>..<percent>..<to> (Interpolable)`](Interpolable) : Interpolation between two values
  - [`~~ (Similar)`](Similar) : Compare objects
+ - [`<> (Swap)`](Swap) : Assigns a new value only if needed
 
  */

@@ -27,5 +27,6 @@
         <page name='TimeZone'/>
         <page name='Interpolable'/>
         <page name='Similar'/>
+        <page name='Swap'/>
     </pages>
 </playground>

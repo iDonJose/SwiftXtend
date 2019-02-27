@@ -1,12 +1,5 @@
 import SwiftXtend
 
-/*:
- ### `swap(_:)`
- Swaps value.
- */
-
-var bool = false
-let swapped = bool.swap(true)
 
 /*:
  ### `toggled()`
