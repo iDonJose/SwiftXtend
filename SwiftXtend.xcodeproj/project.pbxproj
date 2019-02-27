@@ -26,6 +26,7 @@
 		825C1E2C21AC436F0080D384 /* CG+Similar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825C1E2B21AC436F0080D384 /* CG+Similar.swift */; };
 		825C1E3221AC43DE0080D384 /* UIKit+Similar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825C1E3121AC43DE0080D384 /* UIKit+Similar.swift */; };
 		827BE41C21C7E45D001C8683 /* Function+Transformations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827BE41B21C7E45D001C8683 /* Function+Transformations.swift */; };
+		8283B1E42215D20000C7F641 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8283B1E32215D20000C7F641 /* Collection.swift */; };
 		828727E621AD339A00819150 /* UIKit+Randomizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828727E521AD339A00819150 /* UIKit+Randomizable.swift */; };
 		82891BFF21C71D150003511D /* Functions+Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82891BFE21C71D150003511D /* Functions+Defaults.swift */; };
 		82A18AA221B9A84A00ED070D /* Function.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A18AA121B9A84A00ED070D /* Function.swift */; };
@@ -115,6 +116,7 @@
 		825C1E2B21AC436F0080D384 /* CG+Similar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CG+Similar.swift"; sourceTree = "<group>"; };
 		825C1E3121AC43DE0080D384 /* UIKit+Similar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit+Similar.swift"; sourceTree = "<group>"; };
 		827BE41B21C7E45D001C8683 /* Function+Transformations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Function+Transformations.swift"; sourceTree = "<group>"; };
+		8283B1E32215D20000C7F641 /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
 		828727E521AD339A00819150 /* UIKit+Randomizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit+Randomizable.swift"; sourceTree = "<group>"; };
 		82891BFE21C71D150003511D /* Functions+Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Functions+Defaults.swift"; sourceTree = "<group>"; };
 		82A18AA121B9A84A00ED070D /* Function.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Function.swift; sourceTree = "<group>"; };
@@ -258,6 +260,7 @@
 			isa = PBXGroup;
 			children = (
 				8230704221A60E8B00551BE1 /* Array.swift */,
+				8283B1E32215D20000C7F641 /* Collection.swift */,
 				8230704821A612E700551BE1 /* Dictionary.swift */,
 				8230704421A612A500551BE1 /* LazyCollection.swift */,
 				8230704621A612CA00551BE1 /* Set.swift */,
@@ -740,6 +743,7 @@
 				82E645BF21A752BE00F676E0 /* Int.swift in Sources */,
 				82E645AD21A6CC7000F676E0 /* Randomizable.swift in Sources */,
 				82E645C521A754EF00F676E0 /* Double.swift in Sources */,
+				8283B1E42215D20000C7F641 /* Collection.swift in Sources */,
 				82521E2E21EF2B6E00E62648 /* Vector2D+Algebra.swift in Sources */,
 				82F5196521A920B7008A4DEC /* Date.swift in Sources */,
 				82F5196121A89290008A4DEC /* Interpolable.swift in Sources */,
