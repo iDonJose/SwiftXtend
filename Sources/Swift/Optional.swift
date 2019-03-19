@@ -8,10 +8,14 @@
 
 extension Optional {
 
-	/// Safely applies a block the wrapped value if it is not nil
-	public func unwrap(then block: (Wrapped) -> Void) {
+	/// Replacement for 'if let .. { .. } else { .. }'
+	public func unwrap(then block: (Wrapped) -> Void,
+					   else elseBlock: (() -> Void)? = nil) {
 		if let value = self {
 			block(value)
+		}
+		else {
+			elseBlock?()
 		}
 	}
 
