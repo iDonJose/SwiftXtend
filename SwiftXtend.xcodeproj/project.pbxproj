@@ -29,6 +29,7 @@
 		8283B1E42215D20000C7F641 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8283B1E32215D20000C7F641 /* Collection.swift */; };
 		828727E621AD339A00819150 /* UIKit+Randomizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828727E521AD339A00819150 /* UIKit+Randomizable.swift */; };
 		82891BFF21C71D150003511D /* Functions+Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82891BFE21C71D150003511D /* Functions+Defaults.swift */; };
+		82968B0A22422E6A00BA11EE /* Copyable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82968B0922422E6A00BA11EE /* Copyable.swift */; };
 		82A18AA221B9A84A00ED070D /* Function.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A18AA121B9A84A00ED070D /* Function.swift */; };
 		82A18AA421B9DB2200ED070D /* Vector2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A18AA321B9DB2200ED070D /* Vector2D.swift */; };
 		82A4F69821CA88FA00D6F6D5 /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A4F69721CA88FA00D6F6D5 /* Optional.swift */; };
@@ -120,6 +121,7 @@
 		8283B1E32215D20000C7F641 /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
 		828727E521AD339A00819150 /* UIKit+Randomizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit+Randomizable.swift"; sourceTree = "<group>"; };
 		82891BFE21C71D150003511D /* Functions+Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Functions+Defaults.swift"; sourceTree = "<group>"; };
+		82968B0922422E6A00BA11EE /* Copyable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Copyable.swift; sourceTree = "<group>"; };
 		82A18AA121B9A84A00ED070D /* Function.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Function.swift; sourceTree = "<group>"; };
 		82A18AA321B9DB2200ED070D /* Vector2D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vector2D.swift; sourceTree = "<group>"; };
 		82A4F69721CA88FA00D6F6D5 /* Optional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Optional.swift; sourceTree = "<group>"; };
@@ -412,6 +414,7 @@
 		82F5196821A96615008A4DEC /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				82968B0922422E6A00BA11EE /* Copyable.swift */,
 				8205539A2204D8A600E3B867 /* Equatable */,
 				82A4F69921CAA61900D6F6D5 /* Identifiable */,
 				82F5196B21A96823008A4DEC /* Initializable */,
@@ -733,6 +736,7 @@
 				82891BFF21C71D150003511D /* Functions+Defaults.swift in Sources */,
 				82F5196721A959A2008A4DEC /* Bundle.swift in Sources */,
 				82F5196F21A9683B008A4DEC /* Swift+Initializable.swift in Sources */,
+				82968B0A22422E6A00BA11EE /* Copyable.swift in Sources */,
 				82F5198321A9F196008A4DEC /* Int+Conversion.swift in Sources */,
 				82F5196A21A96627008A4DEC /* Identifiable.swift in Sources */,
 				82D6371A21AEDCBF001B3E30 /* NSWrapper.swift in Sources */,
