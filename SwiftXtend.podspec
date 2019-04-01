@@ -5,7 +5,7 @@
 Pod::Spec.new do |s|
 
     s.name         = "SwiftXtend"
-    s.version      = "1.3.0"
+    s.version      = "1.4.0"
     s.summary      = "A collection of classes, protocols and Swift extensions"
     s.description  = <<-DESC
                         `SwiftXtend` offers some new fancy classes, new handy protocols and extends Swift types.
